@@ -6,7 +6,9 @@
   --cream: #F8F5F0;
   --dark: #111827;
   --light-grey: #6B7280;
+  --light: #E5E7EB;
   --border-grey: #E5E7EB;
+  --muted: #6B7280;
 }
 
 * {
@@ -89,6 +91,8 @@ nav.scrolled {
   width: auto;
   display: flex;
   align-items: center;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .nav-logo img {
@@ -1264,3 +1268,43 @@ footer {
 .products-grid .product-card:nth-child(2), .stats-grid .stat-box:nth-child(2), .buyer-grid .buyer-card:nth-child(2), .projects-grid-featured .project-tile:nth-child(2) { transition-delay: 0.2s; }
 .products-grid .product-card:nth-child(3), .stats-grid .stat-box:nth-child(3), .buyer-grid .buyer-card:nth-child(3), .projects-grid-featured .project-tile:nth-child(3) { transition-delay: 0.3s; }
 .products-grid .product-card:nth-child(4), .stats-grid .stat-box:nth-child(4), .buyer-grid .buyer-card:nth-child(4) { transition-delay: 0.4s; }
+
+/* ─── FAQ ACCORDION (shared) ─── */
+.faq-list { margin-top: 2.5rem; border-top: 1px solid var(--border-grey); }
+.faq-item { border-bottom: 1px solid var(--border-grey); }
+.faq-question {
+  width: 100%; display: flex; justify-content: space-between; align-items: center;
+  gap: 1rem; padding: 1.35rem 0; background: none; border: none; cursor: pointer;
+  text-align: left; font-family: 'Inter', sans-serif; font-size: 1rem;
+  font-weight: 600; color: var(--navy); line-height: 1.45; transition: color 0.2s;
+}
+.faq-question:hover { color: var(--orange); }
+.faq-icon {
+  flex-shrink: 0; width: 28px; height: 28px; border-radius: 50%;
+  border: 1.5px solid var(--border-grey); display: flex; align-items: center;
+  justify-content: center; font-size: 1.1rem; color: var(--navy);
+  transition: background 0.2s, border-color 0.2s, transform 0.3s; line-height: 1;
+}
+.faq-item.open .faq-icon { background: var(--orange); border-color: var(--orange); color: #fff; transform: rotate(45deg); }
+.faq-answer { overflow: hidden; max-height: 0; transition: max-height 0.4s cubic-bezier(0.16, 1, 0.3, 1); }
+.faq-item.open .faq-answer { max-height: 600px; }
+.faq-answer p { padding-bottom: 1.35rem; font-size: 0.97rem; color: var(--dark); line-height: 1.8; margin-bottom: 0; }
+
+/* ─── FEATURES GRID ─── */
+.features-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; margin-top: 3rem; }
+.feature-box { padding: 2rem; background: #fff; border-radius: 4px; border: 1px solid var(--border-grey); }
+.feature-box h3 { font-size: 1.05rem; color: var(--navy); margin-bottom: 0.75rem; }
+.feature-box p { font-size: 0.92rem; color: var(--light-grey); line-height: 1.7; margin-bottom: 0; }
+
+/* Active nav link */
+.nav-center a.active { color: var(--orange); }
+
+/* Trade form in navy section */
+section.navy-bg .section-title { color: #fff; }
+section.navy-bg .section-subtitle { color: rgba(255,255,255,0.75); }
+section.navy-bg .form-group label { color: rgba(255,255,255,0.85); }
+section.navy-bg .form-group input,
+section.navy-bg .form-group select,
+section.navy-bg .form-group textarea { background: rgba(255,255,255,0.08); border-color: rgba(255,255,255,0.2); color: #fff; }
+
+@media (max-width: 768px) { .features-grid { grid-template-columns: 1fr; } }

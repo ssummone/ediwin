@@ -10,13 +10,18 @@ export const metadata: Metadata = {
 export default function ListedBuildingsPage() {
   return (
     <>
-      <div className="hero-internal" style={{ backgroundImage: "url('/images/craighouse sash and case project.jpg')" }}>
+      <div className="hero">
+        <video className="hero-video-bg" autoPlay muted loop playsInline preload="auto">
+          <source src="/vids/Window_in_luxury_apartment_202605202142.mp4" type="video/mp4" />
+        </video>
+        <div className="hero-overlay" />
         <div className="hero-content">
-          <h1>Windows &amp; Doors for Listed Buildings</h1>
-          <p className="hero-sub">Specialist manufacture for Category A and B listed properties. Pre-approved by Edinburgh City Council. Compliant with Historic Environment Scotland guidance.</p>
+          <span className="hero-eyebrow">Heritage Glazing Specialists · Edinburgh</span>
+          <h1>Sash and Case Windows for Listed Buildings in Edinburgh</h1>
+          <p className="hero-sub">Approved heritage glazing. Traditional timber manufacture. Survey to installation across Edinburgh.</p>
           <div className="hero-ctas">
-            <Link href="/contact" className="btn btn-primary btn-lg">Book a Survey</Link>
-            <Link href="/contact" className="btn btn-white btn-lg">Speak to an Expert</Link>
+            <Link href="/contact" className="btn btn-primary btn-lg">Book a Free Survey</Link>
+            <Link href="tel:01506168204" className="btn btn-white btn-lg">📞 01506 168 204</Link>
           </div>
         </div>
       </div>

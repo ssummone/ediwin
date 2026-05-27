@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Projects | Edinburgh Windows and Doors</title>
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Google Analytics 4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-32C4KP77F6"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-32C4KP77F6');
+    function trackEvent(e,p){if(typeof gtag!=='undefined')gtag('event',e,p||{});}
+  </script>
+  <!-- Microsoft Clarity — ACTIVATE ON GO-LIVE DAY (uncomment + add Project ID) -->
+  <!--
+  <script type="text/javascript">
+    (function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+    t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+    y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window,document,"clarity","script","CLARITY_PROJECT_ID_HERE");
+  </script>
+  -->
+</head>
+<body>
+  <!-- Navigation -->
+  <nav>
+    <a href="index.html" class="nav-logo"><img src="Website updates - easy websites/Company Logo - image 1.jpg" alt="Edinburgh Windows and Doors Logo"></a>
+    <div class="nav-center">
+      <div class="nav-dropdown">
+        <a href="index.html#products">Products</a>
+        <div class="dropdown-menu">
+          <a href="sash-windows.html">Sash & Case Windows</a>
+          <a href="accoya-doors.html">Accoya Timber Doors</a>
+          <a href="secondary-glazing.html">Secondary Glazing</a>
+          <a href="contact.html">Composite Doors</a>
+          <a href="listed-building-windows-survey.html">Listed Buildings</a>
+          <a href="repairs.html">Repairs</a>
+        </div>
+      </div>
+      <a href="commercial.html">Commercial</a>
+      <a href="trade.html">Trade</a>
+      <a href="projects.html">Projects</a>
+      <a href="news.html">News</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="nav-ctas">
+      <a href="trade.html" class="btn btn-outline">Trade Account</a>
+      <a href="contact.html" class="btn btn-primary">Book a Survey</a>
+    </div>
+    <div class="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </nav>
+
+  <!-- Page Hero -->
+  <div class="hero-internal" style="background-image: url('Website updates - easy websites/EWD Aberdeen glass install.jpg');">
+    <div class="hero-content">
+      <h1>Our Projects</h1>
+      <p class="hero-sub">From presidential commissions to family homes. Every project delivered to the same standard.</p>
+    </div>
+  </div>
+
+  <!-- Filter Buttons -->
+  <section style="padding: 3rem 2rem;">
+    <div class="container">
+      <div class="filter-buttons">
+        <button class="filter-btn active" onclick="filterProjects('all')">All</button>
+        <button class="filter-btn" onclick="filterProjects('residential')">Residential</button>
+        <button class="filter-btn" onclick="filterProjects('commercial')">Commercial</button>
+        <button class="filter-btn" onclick="filterProjects('heritage')">Heritage</button>
+        <button class="filter-btn" onclick="filterProjects('hotel')">Hotel</button>
+        <button class="filter-btn" onclick="filterProjects('doors')">Doors</button>
+        <button class="filter-btn" onclick="filterProjects('repairs')">Repairs</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Grid -->
+  <section style="padding-top: 0;">
+    <div class="container">
+      <div class="projects-grid">
+
+        <!-- Fraser Suites -->
+        <a href="commercial.html" class="project-card" data-category="commercial">
+          <img src="Website updates - easy websites/Fraser suites edinburgh sash window refurbishment.jpg" alt="Fraser Suites Edinburgh">
+          <div class="project-card-overlay">
+            <span class="project-category">Commercial</span>
+            <h3>Fraser Suites Edinburgh</h3>
+            <p>156 sash and case windows restored. Heritage gas-filled glazing throughout.</p>
+          </div>
+        </a>
+
+        <!-- Craighouse -->
+        <a href="commercial.html" class="project-card" data-category="heritage">
+          <img src="Website updates - easy websites/craighouse sash and case project.jpg" alt="Craighouse">
+          <div class="project-card-overlay">
+            <span class="project-category">Heritage</span>
+            <h3>Craighouse Restoration</h3>
+            <p>136 windows restored and manufactured for Category A listed property.</p>
+          </div>
+        </a>
+
+        <!-- Trump Turnberry -->
+        <a href="commercial.html" class="project-card" data-category="commercial">
+          <img src="Website updates - easy websites/Edinburgh windows and doors trump turnberry.jpg" alt="Trump Turnberry">
+          <div class="project-card-overlay">
+            <span class="project-category">Presidential</span>
+            <h3>Trump Turnberry</h3>
+            <p>Ballistic glazing installation for Presidential visit to Scotland.</p>
+          </div>
+        </a>
+
+        <!-- Stirling University -->
+        <a href="commercial.html" class="project-card" data-category="commercial">
+          <img src="Website updates - easy websites/stirling uni sash and case window repairs.JPG" alt="Stirling University">
+          <div class="project-card-overlay">
+            <span class="project-category">Commercial</span>
+            <h3>Stirling University</h3>
+            <p>Specialist repairs preserving original features in student accommodation.</p>
+          </div>
+        </a>
+
+        <!-- Ochil Tower School -->
+        <a href="commercial.html" class="project-card" data-category="commercial">
+          <img src="Website updates - easy websites/Ochil tower school window replacement.jpg" alt="Ochil Tower School">
+          <div class="project-card-overlay">
+            <span class="project-category">Educational</span>
+            <h3>Ochil Tower School</h3>
+            <p>Double-glazed timber sash windows replacing aluminium units.</p>
+          </div>
+        </a>
+
+        <!-- Grand Island Hotel -->
+        <a href="contact.html" class="project-card" data-category="hotel">
+          <img src="scraped-projects/images/BvFdsF94CWvgpIm.jpg" alt="Banjo and Ro's Grand Island Hotel">
+          <div class="project-card-overlay">
+            <span class="project-category">Hotel</span>
+            <h3>Banjo &amp; Ro's Grand Island Hotel</h3>
+            <p>New sash and case windows for remote island hotel refurbishment, Isle of Ulva.</p>
+          </div>
+        </a>
+
+        <!-- Helen - Residential Edinburgh -->
+        <a href="contact.html" class="project-card" data-category="residential">
+          <img src="Website updates - easy websites/Helen - sash and case windows.jpg" alt="Helen's project">
+          <div class="project-card-overlay">
+            <span class="project-category">Residential</span>
+            <h3>Helen's Edinburgh Home</h3>
+            <p>Bespoke sash and case windows for homeowner property upgrade.</p>
+          </div>
+        </a>
+
+        <!-- Aberdeen Install -->
+        <a href="contact.html" class="project-card" data-category="commercial">
+          <img src="Website updates - easy websites/EWD Aberdeen glass install.jpg" alt="Aberdeen install">
+          <div class="project-card-overlay">
+            <span class="project-category">Commercial</span>
+            <h3>Aberdeen Glass Install</h3>
+            <p>Timber window supply and installation in Aberdeen.</p>
+          </div>
+        </a>
+
+        <!-- Colinton Window Preservation -->
+        <a href="contact.html" class="project-card" data-category="residential">
+          <img src="scraped-projects/images/yXz6FXS2OQ8fDrn.jpg" alt="Colinton Window Preservation">
+          <div class="project-card-overlay">
+            <span class="project-category">Residential</span>
+            <h3>Colinton Window Preservation</h3>
+            <p>Sympathetic window preservation in Colinton, retaining period character.</p>
+          </div>
+        </a>
+
+        <!-- Bespoke Accoya Entrance Door -->
+        <a href="accoya-doors.html" class="project-card" data-category="doors">
+          <img src="scraped-projects/images/WPR4vPX5793ffc3.jpg" alt="Bespoke Accoya Entrance Door">
+          <div class="project-card-overlay">
+            <span class="project-category">Doors</span>
+            <h3>Bespoke Accoya Entrance Door</h3>
+            <p>Handcrafted Accoya timber entrance door. Bespoke joinery to exact specification.</p>
+          </div>
+        </a>
+
+        <!-- Stockbridge Repairs -->
+        <a href="contact.html" class="project-card" data-category="repairs">
+          <img src="scraped-projects/images/Kp1Yf5CVm71fJ3P.jpg" alt="Stockbridge Repairs">
+          <div class="project-card-overlay">
+            <span class="project-category">Repairs</span>
+            <h3>Stockbridge Repairs</h3>
+            <p>Sash and case window repairs in the Stockbridge conservation area of Edinburgh.</p>
+          </div>
+        </a>
+
+        <!-- Linlithgow Full Refurbishments -->
+        <a href="contact.html" class="project-card" data-category="residential">
+          <img src="scraped-projects/images/bfpCzwkwOmMfDVR.jpg" alt="Linlithgow Full Refurbishments">
+          <div class="project-card-overlay">
+            <span class="project-category">Residential</span>
+            <h3>Linlithgow – Full Refurbishments</h3>
+            <p>Full property window refurbishment for period home in Linlithgow.</p>
+          </div>
+        </a>
+
+        <!-- Accoya French Doors -->
+        <a href="accoya-doors.html" class="project-card" data-category="doors">
+          <img src="scraped-projects/images/axrfNBIuDLs5XgI.jpg" alt="Accoya French Doors">
+          <div class="project-card-overlay">
+            <span class="project-category">Doors</span>
+            <h3>Accoya French Doors</h3>
+            <p>Stunning Accoya timber French doors manufactured and installed for a private client.</p>
+          </div>
+        </a>
+
+        <!-- Inverkeithing Full Restoration -->
+        <a href="contact.html" class="project-card" data-category="heritage">
+          <img src="scraped-projects/images/ddegNLHaPzu7oyQ.jpg" alt="Inverkeithing Full Restoration">
+          <div class="project-card-overlay">
+            <span class="project-category">Heritage</span>
+            <h3>Inverkeithing – Full Restoration</h3>
+            <p>Full sash window restoration and Gecko draught seal installation in Inverkeithing.</p>
+          </div>
+        </a>
+
+        <!-- Broxburn Double Glazing -->
+        <a href="contact.html" class="project-card" data-category="residential">
+          <img src="scraped-projects/images/DTx4E9TEDDdGYv5.jpg" alt="Broxburn Double Glazing">
+          <div class="project-card-overlay">
+            <span class="project-category">Residential</span>
+            <h3>Broxburn Double Glazing</h3>
+            <p>Double glazing upgrade for timber sash and case windows in Broxburn.</p>
+          </div>
+        </a>
+
+        <!-- Accoya Windows and Doors -->
+        <a href="accoya-doors.html" class="project-card" data-category="doors">
+          <img src="scraped-projects/images/Is8sTdWg0T9Ml6e.jpg" alt="Accoya Windows and Doors">
+          <div class="project-card-overlay">
+            <span class="project-category">Doors</span>
+            <h3>Accoya Windows &amp; Doors</h3>
+            <p>Complete Accoya timber windows and doors package for a private Edinburgh property.</p>
+          </div>
+        </a>
+
+        <!-- Composite Doors -->
+        <a href="contact.html" class="project-card" data-category="doors">
+          <img src="scraped-projects/images/gcF11LFobE1Gmia.jpg" alt="Composite Doors">
+          <div class="project-card-overlay">
+            <span class="project-category">Doors</span>
+            <h3>Composite Doors</h3>
+            <p>High-performance composite doors supplied and fitted for residential properties.</p>
+          </div>
+        </a>
+
+        <!-- Lenborough Accoya Sash Project -->
+        <a href="contact.html" class="project-card" data-category="residential">
+          <img src="scraped-projects/images/F4FTrGNvn1edUx8.jpg" alt="Lenborough Accoya Sash Project">
+          <div class="project-card-overlay">
+            <span class="project-category">Residential</span>
+            <h3>Lenborough Accoya Sash &amp; Case</h3>
+            <p>Accoya sash and case windows manufactured and installed at Lenborough estate.</p>
+          </div>
+        </a>
+
+        <!-- The Drum Sash Window Repairs -->
+        <a href="contact.html" class="project-card" data-category="repairs">
+          <img src="scraped-projects/images/7Olta48bXB80rWp.jpg" alt="The Drum Sash Window Repairs">
+          <div class="project-card-overlay">
+            <span class="project-category">Repairs</span>
+            <h3>The Drum – Sash Window Repairs</h3>
+            <p>Sash window repairs at The Drum, preserving original timber joinery.</p>
+          </div>
+        </a>
+
+        <!-- Property Renovation Window Replacement -->
+        <a href="contact.html" class="project-card" data-category="residential">
+          <img src="scraped-projects/images/z5ZHilSqT0EefPM.jpg" alt="Property Renovation Window Replacement">
+          <div class="project-card-overlay">
+            <span class="project-category">Residential</span>
+            <h3>Property Renovation – Window Replacement</h3>
+            <p>Full window replacement as part of a comprehensive property renovation project.</p>
+          </div>
+        </a>
+
+        <!-- Morningside New Timber Sash -->
+        <a href="contact.html" class="project-card" data-category="residential">
+          <img src="scraped-projects/images/Iybvw8ct4U5qKnH.jpg" alt="Morningside New Timber Sash">
+          <div class="project-card-overlay">
+            <span class="project-category">Residential</span>
+            <h3>Morningside – New Timber Sash &amp; Case</h3>
+            <p>New timber sash and case windows for a period property in Morningside, Edinburgh.</p>
+          </div>
+        </a>
+
+        <!-- Morningside Restorations -->
+        <a href="contact.html" class="project-card" data-category="heritage">
+          <img src="scraped-projects/images/d4yjBwW9NAg1l5x.jpg" alt="Morningside Restorations">
+          <div class="project-card-overlay">
+            <span class="project-category">Heritage</span>
+            <h3>Morningside Restorations</h3>
+            <p>Sash window restorations in Edinburgh's Morningside conservation area.</p>
+          </div>
+        </a>
+
+        <!-- Lomond Sash and Case -->
+        <a href="contact.html" class="project-card" data-category="residential">
+          <img src="scraped-projects/images/yFrYOhGdLjX3B24.jpg" alt="Lomond Sash and Case Windows">
+          <div class="project-card-overlay">
+            <span class="project-category">Residential</span>
+            <h3>Lomond Sash &amp; Case Windows</h3>
+            <p>New sash and case windows installed at a property near Loch Lomond.</p>
+          </div>
+        </a>
+
+        <!-- The Meadows 14 New Sash -->
+        <a href="contact.html" class="project-card" data-category="residential">
+          <img src="scraped-projects/images/mzeZsX7VZ64g28M.jpg" alt="The Meadows 14 New Sash">
+          <div class="project-card-overlay">
+            <span class="project-category">Residential</span>
+            <h3>The Meadows – 14 New Sash &amp; Case</h3>
+            <p>14 new timber sash and case windows for a tenement property in The Meadows.</p>
+          </div>
+        </a>
+
+        <!-- Like for Like Replacements -->
+        <a href="contact.html" class="project-card" data-category="residential">
+          <img src="scraped-projects/images/VXo6VzTt62XFmQC.jpg" alt="Like for Like Replacements">
+          <div class="project-card-overlay">
+            <span class="project-category">Residential</span>
+            <h3>Like-for-Like Sash Replacements</h3>
+            <p>Accurate like-for-like sash and case window replacements maintaining period authenticity.</p>
+          </div>
+        </a>
+
+        <!-- City Centre Draught Proofing -->
+        <a href="contact.html" class="project-card" data-category="repairs">
+          <img src="scraped-projects/images/Rk59hKeErs4nc7j.jpg" alt="City Centre Draught Proofing">
+          <div class="project-card-overlay">
+            <span class="project-category">Repairs</span>
+            <h3>City Centre – Window Draught Proofing</h3>
+            <p>Draught proofing for sash and case windows in Edinburgh city centre.</p>
+          </div>
+        </a>
+
+        <!-- Cramond Tower Timber Double Glazing -->
+        <a href="contact.html" class="project-card" data-category="heritage">
+          <img src="scraped-projects/images/6IdDoTeCp3C1tjO.jpg" alt="Cramond Tower Timber Double Glazing">
+          <div class="project-card-overlay">
+            <span class="project-category">Heritage</span>
+            <h3>Cramond Tower – Timber Double Glazing</h3>
+            <p>Slim-profile double glazing for the historic Cramond Tower property.</p>
+          </div>
+        </a>
+
+        <!-- Belgrave Sash Repairs -->
+        <a href="contact.html" class="project-card" data-category="repairs">
+          <img src="scraped-projects/images/RfaCNIp3Gf4d390.jpg" alt="Belgrave Sash Repairs">
+          <div class="project-card-overlay">
+            <span class="project-category">Repairs</span>
+            <h3>Belgrave – Sash &amp; Case Repairs</h3>
+            <p>Expert sash window repairs in the Belgrave conservation area of Edinburgh.</p>
+          </div>
+        </a>
+
+        <!-- The Meadows New Double Glazed Sashes -->
+        <a href="contact.html" class="project-card" data-category="residential">
+          <img src="scraped-projects/images/gNRF4PfEK6dM8Mt.jpg" alt="The Meadows New Double Glazed Sashes">
+          <div class="project-card-overlay">
+            <span class="project-category">Residential</span>
+            <h3>The Meadows – New Double Glazed Sashes</h3>
+            <p>New double-glazed sash units fitted into existing frames in The Meadows.</p>
+          </div>
+        </a>
+
+        <!-- Leith Sash Window Double Glazing -->
+        <a href="contact.html" class="project-card" data-category="residential">
+          <img src="scraped-projects/images/xkldWOnv6o52DE0.jpg" alt="Leith Sash Window Double Glazing">
+          <div class="project-card-overlay">
+            <span class="project-category">Residential</span>
+            <h3>Leith Sash Window Double Glazing</h3>
+            <p>Double glazing upgrade to existing timber sash windows in Leith, Edinburgh.</p>
+          </div>
+        </a>
+
+        <!-- Melville St Draught Proofing -->
+        <a href="contact.html" class="project-card" data-category="repairs">
+          <img src="scraped-projects/images/pZf1Tx5G4UQUF6h.jpg" alt="Melville St Draught Proofing">
+          <div class="project-card-overlay">
+            <span class="project-category">Repairs</span>
+            <h3>Melville Street Draught Proofing</h3>
+            <p>Draught proofing for sash windows on Melville Street, Edinburgh's West End.</p>
+          </div>
+        </a>
+
+        <!-- Easter Road Sash Repairs -->
+        <a href="contact.html" class="project-card" data-category="repairs">
+          <img src="scraped-projects/images/G8D7Uo5ZlVc13s7.jpg" alt="Easter Road Sash Repairs">
+          <div class="project-card-overlay">
+            <span class="project-category">Repairs</span>
+            <h3>Easter Road – Sash &amp; Case Repairs</h3>
+            <p>Sash and case window repairs on Easter Road, Edinburgh.</p>
+          </div>
+        </a>
+
+        <!-- The Meadows Timber Sash -->
+        <a href="contact.html" class="project-card" data-category="residential">
+          <img src="scraped-projects/images/T4mpaR7meDpu4yB.jpg" alt="The Meadows Timber Sash">
+          <div class="project-card-overlay">
+            <span class="project-category">Residential</span>
+            <h3>The Meadows – Timber Sash &amp; Case</h3>
+            <p>New timber sash and case windows for a tenement flat in The Meadows, Edinburgh.</p>
+          </div>
+        </a>
+
+        <!-- Heritage Slim Line Double Glazing -->
+        <a href="contact.html" class="project-card" data-category="heritage">
+          <img src="scraped-projects/images/JX1QZFRNLXzD9Gg.jpg" alt="Heritage Slim Line Double Glazing">
+          <div class="project-card-overlay">
+            <span class="project-category">Heritage</span>
+            <h3>Heritage Slim-Line Double Glazing</h3>
+            <p>Slim-profile heritage double glazing fitted sensitively within listed building guidelines.</p>
+          </div>
+        </a>
+
+        <!-- Aberdour Sash and Case -->
+        <a href="contact.html" class="project-card" data-category="residential">
+          <img src="scraped-projects/images/8OhpSx09C4DB52H.jpg" alt="Aberdour Sash and Case Windows">
+          <div class="project-card-overlay">
+            <span class="project-category">Residential</span>
+            <h3>Aberdour Sash &amp; Case Windows</h3>
+            <p>Timber sash and case windows for a period property in Aberdour, Fife.</p>
+          </div>
+        </a>
+
+        <!-- Draught Proofing City Centre -->
+        <a href="contact.html" class="project-card" data-category="repairs">
+          <img src="scraped-projects/images/OCzuhRvYOx1qUCi.jpg" alt="Draught Proofing Edinburgh City Centre">
+          <div class="project-card-overlay">
+            <span class="project-category">Repairs</span>
+            <h3>Draught Proofing – Edinburgh City Centre</h3>
+            <p>Full draught proofing package for a period tenement in Edinburgh city centre.</p>
+          </div>
+        </a>
+
+        <!-- Commercial Air Circulation -->
+        <a href="commercial.html" class="project-card" data-category="commercial">
+          <img src="scraped-projects/images/VhJj3UYzEqVQGih.jpg" alt="Commercial Air Circulation Project">
+          <div class="project-card-overlay">
+            <span class="project-category">Commercial</span>
+            <h3>Commercial Air Circulation Project</h3>
+            <p>Bespoke ventilation and air circulation solution for a commercial building.</p>
+          </div>
+        </a>
+
+        <!-- Sash Window Restoration Edinburgh -->
+        <a href="contact.html" class="project-card" data-category="heritage">
+          <img src="scraped-projects/images/o8FYLyiNO8Ky8uj.jpg" alt="Sash Window Restoration Edinburgh">
+          <div class="project-card-overlay">
+            <span class="project-category">Heritage</span>
+            <h3>Sash Window Restoration Edinburgh</h3>
+            <p>Full restoration of original sash and case windows for a listed Edinburgh property.</p>
+          </div>
+        </a>
+
+        <!-- Timber Sash and Case Refurbishment -->
+        <a href="contact.html" class="project-card" data-category="residential">
+          <img src="scraped-projects/images/6w4lhfa7OXg7KIA.jpg" alt="Timber Sash and Case Refurbishment">
+          <div class="project-card-overlay">
+            <span class="project-category">Residential</span>
+            <h3>Timber Sash &amp; Case Refurbishment</h3>
+            <p>Comprehensive timber sash and case refurbishment for a period Edinburgh property.</p>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="navy-bg">
+    <div class="container" style="text-align: center;">
+      <h2>Ready to start your project?</h2>
+      <p style="max-width: 600px; margin: 1.5rem auto; color: rgba(255,255,255,0.9);">Whether it's a single window upgrade or a complex commercial installation, we're ready to deliver.</p>
+      <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+        <a href="contact.html" class="btn btn-primary btn-lg">Start Your Project</a>
+        <a href="trade.html" class="btn btn-white btn-lg">Trade Enquiry</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-col">
+        <img src="Website updates - easy websites/Company Logo - image 1.jpg" alt="Logo" class="footer-logo">
+        <p class="footer-tagline">Scottish timber sash & case window manufacturer. Est. 2019.</p>
+      </div>
+      <div class="footer-col">
+        <h3>Products</h3>
+        <ul>
+          <li><a href="sash-windows.html">Sash & Case Windows</a></li>
+          <li><a href="accoya-doors.html">Accoya Timber Doors</a></li>
+          <li><a href="secondary-glazing.html">Secondary Glazing</a></li>
+          <li><a href="contact.html">Composite Doors</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>Trade & Commercial</h3>
+        <ul>
+          <li><a href="trade.html">Trade Account</a></li>
+          <li><a href="commercial.html">Commercial Projects</a></li>
+          <li><a href="projects.html">Our Projects</a></li>
+          <li><a href="contact.html">Request Quote</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>Contact</h3>
+        <div class="footer-contact-info">
+          <p><strong>Phone:</strong><br>01506 168 204</p>
+          <p><strong>Email:</strong><br>sales@edinburghwindowsanddoors.co.uk</p>
+          <p><strong>Location:</strong><br>Edinburgh</p>
+          <p style="margin-top: 1rem; font-size: 0.85rem;">Response within 1 working day<br>Mon–Fri 8am–5pm</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <p>&copy; 2024 Edinburgh Windows and Doors. All rights reserved. Scottish timber manufacturer.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Navigation scroll effect
+    const nav = document.querySelector('nav');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 50) {
+        nav.classList.add('scrolled');
+      } else {
+        nav.classList.remove('scrolled');
+      }
+    });
+
+    // Mobile menu toggle
+    const hamburger = document.querySelector('.hamburger');
+    hamburger.addEventListener('click', () => {
+      nav.classList.toggle('mobile-open');
+    });
+
+    document.querySelectorAll('.nav-center a').forEach(link => {
+      link.addEventListener('click', () => {
+        nav.classList.remove('mobile-open');
+      });
+    });
+
+    // Filter function
+    function filterProjects(category) {
+      const cards = document.querySelectorAll('.project-card');
+      const buttons = document.querySelectorAll('.filter-btn');
+
+      // Update active button
+      buttons.forEach(btn => btn.classList.remove('active'));
+      event.target.classList.add('active');
+
+      // Filter cards
+      cards.forEach(card => {
+        if (category === 'all' || card.dataset.category === category) {
+          card.classList.remove('hidden');
+        } else {
+          card.classList.add('hidden');
+        }
+      });
+    }
+
+    // Intersection Observer for scroll animations
+    document.addEventListener("DOMContentLoaded", () => {
+      const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('is-revealed');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.1 });
+      
+      document.querySelectorAll("section, .product-card, .buyer-card, .stat-box, .two-col, .project-tile").forEach(el => {
+        el.classList.add("reveal-up");
+        observer.observe(el);
+      });
+    });
+  </script>
+</body>
+</html>

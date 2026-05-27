@@ -1,0 +1,1179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sash and Case Windows for Listed Buildings in Edinburgh | Edinburgh Windows & Doors</title>
+  <meta name="description" content="Approved heritage glazing and traditional timber sash and case windows for listed and conservation area properties in Edinburgh. Book a free survey today.">
+  <meta name="robots" content="noindex">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --navy: #1a2b4a;
+      --navy-light: #223560;
+      --orange: #d4631d;
+      --orange-dark: #b8521a;
+      --cream: #f7f4ef;
+      --border: #e0d9cf;
+      --text: #2c2c2c;
+      --muted: #6b7280;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      color: var(--text);
+      background: #fff;
+      line-height: 1.6;
+    }
+
+    /* ─── MINIMAL NAV ─── */
+    .lp-nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 100;
+      background: rgba(26, 43, 74, 0.95);
+      backdrop-filter: blur(8px);
+      padding: 1rem 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .lp-nav.nav-hidden {
+      display: none;
+    }
+
+    .lp-nav img {
+      height: 36px;
+      width: auto;
+    }
+
+    .lp-nav a.nav-cta {
+      background: var(--orange);
+      color: #fff;
+      text-decoration: none;
+      padding: 0.6rem 1.4rem;
+      border-radius: 3px;
+      font-weight: 600;
+      font-size: 0.9rem;
+      transition: background 0.2s;
+    }
+
+    .lp-nav a.nav-cta:hover { background: var(--orange-dark); }
+
+    /* ─── HERO ─── */
+    .hero {
+      min-height: 100vh;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      position: relative;
+    }
+
+    .hero-image-col {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero-image-col img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+
+    .hero-image-col::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to right, rgba(26,43,74,0.15) 0%, transparent 100%);
+    }
+
+    .hero-content-col {
+      background: var(--navy);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 8rem 4rem 4rem;
+    }
+
+    .hero-label {
+      display: inline-block;
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--orange);
+      margin-bottom: 1.5rem;
+    }
+
+    .hero h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(2rem, 3vw, 2.8rem);
+      color: #fff;
+      line-height: 1.2;
+      margin-bottom: 1.25rem;
+    }
+
+    .hero-sub {
+      font-size: 1.05rem;
+      color: rgba(255,255,255,0.8);
+      line-height: 1.7;
+      margin-bottom: 2.5rem;
+      border-left: 3px solid var(--orange);
+      padding-left: 1.25rem;
+    }
+
+    .hero-ctas {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      margin-bottom: 2.5rem;
+    }
+
+    .btn-primary-lp {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      background: var(--orange);
+      color: #fff;
+      text-decoration: none;
+      padding: 1.1rem 2rem;
+      border-radius: 3px;
+      font-weight: 700;
+      font-size: 1.05rem;
+      transition: background 0.2s, transform 0.2s;
+      border: none;
+      cursor: pointer;
+    }
+
+    .btn-primary-lp:hover {
+      background: var(--orange-dark);
+      transform: translateY(-1px);
+    }
+
+    .hero-phone {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      color: #fff;
+    }
+
+    .hero-phone a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 1.4rem;
+      font-weight: 700;
+      letter-spacing: 0.02em;
+      transition: color 0.2s;
+    }
+
+    .hero-phone a:hover { color: var(--orange); }
+
+    .hero-phone-label {
+      font-size: 0.8rem;
+      color: rgba(255,255,255,0.6);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+
+    .phone-icon {
+      width: 40px;
+      height: 40px;
+      background: rgba(255,255,255,0.1);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .phone-icon svg { width: 18px; height: 18px; fill: #fff; }
+
+    /* ─── TRUST BAR ─── */
+    .trust-bar {
+      background: var(--cream);
+      border-bottom: 1px solid var(--border);
+      padding: 1.25rem 2rem;
+    }
+
+    .trust-bar-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .trust-item-lp {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--navy);
+      white-space: nowrap;
+    }
+
+    .trust-dot {
+      width: 8px;
+      height: 8px;
+      background: var(--orange);
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+
+    /* ─── SECTIONS ─── */
+    section { padding: 5rem 2rem; }
+    .container-lp { max-width: 1100px; margin: 0 auto; }
+
+    .section-label {
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--orange);
+      display: block;
+      margin-bottom: 1rem;
+    }
+
+    h2.section-heading {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(1.75rem, 2.5vw, 2.25rem);
+      color: var(--navy);
+      line-height: 1.25;
+      margin-bottom: 1.5rem;
+    }
+
+    /* ─── QUALIFICATION ─── */
+    .qualification {
+      background: #fff;
+    }
+
+    .qualification-inner {
+      max-width: 800px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .qualification-inner p {
+      font-size: 1.1rem;
+      line-height: 1.85;
+      color: var(--text);
+    }
+
+    .qualification-inner strong {
+      color: var(--navy);
+    }
+
+    /* ─── SERVICES ─── */
+    .services {
+      background: var(--navy);
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2px;
+      margin-top: 3rem;
+    }
+
+    .service-card {
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.1);
+      padding: 2.5rem 2rem;
+      transition: background 0.3s;
+    }
+
+    .service-card:hover {
+      background: rgba(255,255,255,0.09);
+    }
+
+    .service-num {
+      font-size: 2.5rem;
+      font-weight: 800;
+      color: rgba(212,99,29,0.25);
+      font-family: 'Playfair Display', serif;
+      line-height: 1;
+      margin-bottom: 1rem;
+    }
+
+    .service-card h3 {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 0.75rem;
+      line-height: 1.35;
+    }
+
+    .service-card p {
+      font-size: 0.9rem;
+      color: rgba(255,255,255,0.7);
+      line-height: 1.7;
+    }
+
+    /* ─── PROJECTS STRIP ─── */
+    .projects-strip {
+      background: var(--cream);
+    }
+
+    .projects-strip-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+      margin-top: 3rem;
+    }
+
+    .project-strip-card {
+      position: relative;
+      overflow: hidden;
+      border-radius: 4px;
+      aspect-ratio: 4/3;
+    }
+
+    .project-strip-card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.5s ease;
+    }
+
+    .project-strip-card:hover img {
+      transform: scale(1.05);
+    }
+
+    .project-strip-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(26,43,74,0.92) 0%, rgba(26,43,74,0.3) 50%, transparent 100%);
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding: 1.75rem;
+    }
+
+    .project-strip-tag {
+      font-size: 0.7rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--orange);
+      margin-bottom: 0.4rem;
+    }
+
+    .project-strip-card h3 {
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 0.3rem;
+    }
+
+    .project-strip-card p {
+      font-size: 0.82rem;
+      color: rgba(255,255,255,0.75);
+    }
+
+    /* ─── FORM SECTION ─── */
+    .form-section {
+      background: #fff;
+    }
+
+    .form-layout {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 5rem;
+      align-items: start;
+    }
+
+    .form-left {}
+
+    .form-left .qualification-block {
+      margin-top: 2rem;
+      padding: 2rem;
+      background: var(--cream);
+      border-radius: 4px;
+      border-left: 4px solid var(--orange);
+    }
+
+    .form-left .qualification-block p {
+      font-size: 0.95rem;
+      color: var(--text);
+      line-height: 1.7;
+    }
+
+    .form-left .qualification-block strong {
+      display: block;
+      color: var(--navy);
+      font-size: 1rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .trust-badges {
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+      margin-top: 2rem;
+      flex-wrap: wrap;
+    }
+
+    .trust-badges img {
+      height: 52px;
+      width: auto;
+      opacity: 0.85;
+    }
+
+    .survey-form {
+      background: var(--navy);
+      padding: 2.5rem;
+      border-radius: 6px;
+    }
+
+    .survey-form h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.6rem;
+      color: #fff;
+      margin-bottom: 0.5rem;
+    }
+
+    .survey-form .form-sub {
+      font-size: 0.9rem;
+      color: rgba(255,255,255,0.6);
+      margin-bottom: 2rem;
+    }
+
+    .form-field {
+      margin-bottom: 1.25rem;
+    }
+
+    .form-field label {
+      display: block;
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: rgba(255,255,255,0.8);
+      margin-bottom: 0.4rem;
+    }
+
+    .form-field input {
+      width: 100%;
+      padding: 0.875rem 1rem;
+      border: 1px solid rgba(255,255,255,0.15);
+      border-radius: 3px;
+      background: rgba(255,255,255,0.07);
+      color: #fff;
+      font-family: 'Inter', sans-serif;
+      font-size: 0.95rem;
+      transition: border-color 0.2s, background 0.2s;
+    }
+
+    .form-field input::placeholder { color: rgba(255,255,255,0.3); }
+
+    .form-field input:focus {
+      outline: none;
+      border-color: var(--orange);
+      background: rgba(255,255,255,0.1);
+    }
+
+    .form-submit {
+      width: 100%;
+      padding: 1.1rem;
+      background: var(--orange);
+      color: #fff;
+      border: none;
+      border-radius: 3px;
+      font-family: 'Inter', sans-serif;
+      font-size: 1.05rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: background 0.2s, transform 0.2s;
+      margin-top: 0.5rem;
+    }
+
+    .form-submit:hover {
+      background: var(--orange-dark);
+      transform: translateY(-1px);
+    }
+
+    .form-assurance {
+      font-size: 0.82rem;
+      color: rgba(255,255,255,0.5);
+      text-align: center;
+      margin-top: 0.85rem;
+    }
+
+    /* ─── TESTIMONIAL ─── */
+    .testimonial-section {
+      background: var(--cream);
+      padding: 4rem 2rem;
+      text-align: center;
+    }
+
+    .testimonial-inner {
+      max-width: 720px;
+      margin: 0 auto;
+    }
+
+    .quote-mark {
+      font-family: 'Playfair Display', serif;
+      font-size: 5rem;
+      color: var(--orange);
+      opacity: 0.4;
+      line-height: 0.6;
+      margin-bottom: 1rem;
+      display: block;
+    }
+
+    .testimonial-text {
+      font-size: 1.2rem;
+      font-style: italic;
+      color: var(--navy);
+      line-height: 1.75;
+      margin-bottom: 1.5rem;
+    }
+
+    .testimonial-attribution {
+      font-size: 0.88rem;
+      color: var(--muted);
+      font-weight: 600;
+    }
+
+    .testimonial-stars {
+      color: #f59e0b;
+      font-size: 1.1rem;
+      margin-bottom: 1rem;
+    }
+
+    .final-phone {
+      margin-top: 3rem;
+      padding-top: 3rem;
+      border-top: 1px solid var(--border);
+    }
+
+    .final-phone p {
+      font-size: 0.9rem;
+      color: var(--muted);
+      margin-bottom: 0.75rem;
+    }
+
+    .final-phone a {
+      font-size: 2rem;
+      font-weight: 800;
+      color: var(--navy);
+      text-decoration: none;
+      letter-spacing: 0.02em;
+      transition: color 0.2s;
+    }
+
+    .final-phone a:hover { color: var(--orange); }
+
+    /* ─── FAQ ─── */
+    .faq-section {
+      background: #fff;
+      padding: 5rem 2rem;
+    }
+
+    .faq-section .container-lp {
+      max-width: 820px;
+    }
+
+    .faq-list {
+      margin-top: 2.5rem;
+      border-top: 1px solid var(--border);
+    }
+
+    .faq-item {
+      border-bottom: 1px solid var(--border);
+    }
+
+    .faq-question {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+      padding: 1.35rem 0;
+      background: none;
+      border: none;
+      cursor: pointer;
+      text-align: left;
+      font-family: 'Inter', sans-serif;
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--navy);
+      line-height: 1.45;
+      transition: color 0.2s;
+    }
+
+    .faq-question:hover { color: var(--orange); }
+
+    .faq-icon {
+      flex-shrink: 0;
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      border: 1.5px solid var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.1rem;
+      color: var(--navy);
+      transition: background 0.2s, border-color 0.2s, transform 0.3s;
+      line-height: 1;
+    }
+
+    .faq-item.open .faq-icon {
+      background: var(--orange);
+      border-color: var(--orange);
+      color: #fff;
+      transform: rotate(45deg);
+    }
+
+    .faq-answer {
+      overflow: hidden;
+      max-height: 0;
+      transition: max-height 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .faq-item.open .faq-answer {
+      max-height: 400px;
+    }
+
+    .faq-answer p {
+      padding-bottom: 1.35rem;
+      font-size: 0.97rem;
+      color: var(--text);
+      line-height: 1.8;
+    }
+
+    .faq-answer strong { color: var(--navy); }
+
+    /* ─── RESPONSIVE ─── */
+    @media (max-width: 900px) {
+      .hero {
+        grid-template-columns: 1fr;
+        min-height: auto;
+      }
+
+      .hero-image-col {
+        height: 50vw;
+        min-height: 280px;
+      }
+
+      .hero-content-col {
+        padding: 3rem 2rem;
+      }
+
+      .services-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .projects-strip-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .form-layout {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+      }
+
+      .trust-bar-inner {
+        justify-content: flex-start;
+        gap: 1.25rem;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .hero h1 { font-size: 1.75rem; }
+      .lp-nav { padding: 0.875rem 1.25rem; }
+      section { padding: 3.5rem 1.25rem; }
+      .survey-form { padding: 1.75rem; }
+    }
+  </style>
+
+  <!-- Google Analytics 4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-32C4KP77F6"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-32C4KP77F6');
+    function trackEvent(e,p){if(typeof gtag!=='undefined')gtag('event',e,p||{});}
+  </script>
+  <!-- Microsoft Clarity — ACTIVATE ON GO-LIVE DAY (uncomment + add Project ID) -->
+  <!--
+  <script type="text/javascript">
+    (function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+    t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+    y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window,document,"clarity","script","CLARITY_PROJECT_ID_HERE");
+  </script>
+  -->
+</head>
+<body>
+
+  <!-- ─── FULL SITE NAV (hidden via JS when ?ref=ads) ─── -->
+  <nav id="siteNav">
+    <a href="index.html" class="nav-logo"><img src="Website updates - easy websites/Company Logo - image 1.jpg" alt="Edinburgh Windows and Doors Logo"></a>
+    <div class="nav-center">
+      <div class="nav-dropdown">
+        <a href="index.html#products">Products</a>
+        <div class="dropdown-menu">
+          <a href="sash-windows.html">Sash &amp; Case Windows</a>
+          <a href="accoya-doors.html">Accoya Timber Doors</a>
+          <a href="secondary-glazing.html">Secondary Glazing</a>
+          <a href="contact.html">Composite Doors</a>
+          <a href="listed-building-windows-survey.html">Listed Buildings</a>
+          <a href="repairs.html">Repairs</a>
+        </div>
+      </div>
+      <a href="commercial.html">Commercial</a>
+      <a href="trade.html">Trade</a>
+      <a href="projects.html">Projects</a>
+      <a href="news.html">News</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="nav-ctas">
+      <a href="trade.html" class="btn btn-outline">Trade Account</a>
+      <a href="#survey-form" class="btn btn-primary">Book a Survey</a>
+    </div>
+    <div class="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </nav>
+
+  <!-- ─── HERO ─── -->
+  <div class="hero">
+    <video class="hero-video-bg" autoplay muted loop playsinline preload="auto">
+      <source src="vids/Window_in_luxury_apartment_202605202142.mp4" type="video/mp4">
+    </video>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <span class="hero-eyebrow">Heritage Glazing Specialists · Edinburgh</span>
+      <h1>Sash and Case Windows for Listed Buildings in Edinburgh</h1>
+      <p class="hero-sub" style="font-size:1.15rem; color:rgba(255,255,255,0.88); max-width:600px; margin:1.25rem auto 2rem;">Approved heritage glazing. Traditional timber manufacture. Survey to installation across Edinburgh.</p>
+      <div style="display:flex; gap:1rem; justify-content:center; flex-wrap:wrap; align-items:center;">
+        <a href="#survey-form" class="btn btn-primary btn-lg">Book a Free Survey</a>
+        <a href="tel:01506168204" class="btn btn-white btn-lg">📞 01506 168 204</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ─── TRUST BAR ─── -->
+  <div class="trust-bar">
+    <div class="trust-bar-inner">
+      <div class="trust-item-lp"><span class="trust-dot"></span>Made in Scotland</div>
+      <div class="trust-item-lp"><span class="trust-dot"></span>Heritage Approved Glazing</div>
+      <div class="trust-item-lp"><span class="trust-dot"></span>10,000+ Windows Installed</div>
+      <div class="trust-item-lp"><span class="trust-dot"></span>Fraser Suites · 156 Windows</div>
+      <div class="trust-item-lp"><span class="trust-dot"></span>Trusted Trader</div>
+    </div>
+  </div>
+
+  <!-- ─── QUALIFICATION ─── -->
+  <section class="qualification">
+    <div class="container-lp qualification-inner">
+      <span class="section-label">Who we work with</span>
+      <h2 class="section-heading">Are you in the right place?</h2>
+      <p>
+        We specialise in timber sash and case windows for <strong>listed and conservation area properties</strong> in Edinburgh.
+        We use heritage slim-line double glazing on the council approved list and traditional materials including linseed putty.
+        If your property is <strong>A-listed, B-listed, C-listed, or in a conservation area</strong>, we know exactly what is required — and we'll handle the process from survey to council sign-off.
+      </p>
+    </div>
+  </section>
+
+  <!-- ─── SERVICES ─── -->
+  <section class="services">
+    <div class="container-lp">
+      <span class="section-label" style="color: rgba(212,99,29,0.9);">What we do</span>
+      <h2 class="section-heading" style="color: #fff;">Three ways we can help</h2>
+      <div class="services-grid">
+
+        <div class="service-card">
+          <div class="service-num">01</div>
+          <h3>Full restoration with heritage glazing upgrade</h3>
+          <p>We restore your existing frames, upgrade to slim-line heritage double glazing, and add permanent draught proofing. The right solution for most listed properties.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-num">02</div>
+          <h3>Double glazing upgrade only</h3>
+          <p>Where frames are structurally sound, we upgrade the glazing using high-performance gas-filled slim-line units (12mm–16mm) on Edinburgh City Council's approved list. These units are pre-approved for use in listed and conservation area properties. Prices typically range from <strong>£1,200 to £3,000</strong> depending on window size, glazing specification, and finish. Minimal disruption. Maximum performance.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-num">03</div>
+          <h3>Like-for-like replacement</h3>
+          <p>Where rot makes restoration impossible we manufacture new timber windows to match the original profile exactly. Indistinguishable from the original. Council approved.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── PROJECTS STRIP ─── -->
+  <section class="projects-strip">
+    <div class="container-lp">
+      <span class="section-label">Recent work</span>
+      <h2 class="section-heading">Projects like yours, completed</h2>
+      <div class="projects-strip-grid">
+
+        <div class="project-strip-card">
+          <img src="Website updates - easy websites/Frasers Edinburgh window repairs.jpg" alt="Fraser Suites Edinburgh heritage window restoration">
+          <div class="project-strip-overlay">
+            <div class="project-strip-tag">Commercial · Heritage · Old Town</div>
+            <h3>Fraser Suites Edinburgh</h3>
+            <p>156 windows. Heritage restoration. Gas-filled slim-line glazing throughout.</p>
+          </div>
+        </div>
+
+        <div class="project-strip-card">
+          <img src="Website updates - easy websites/craighouse sash and case project.jpg" alt="Craighouse sash and case window restoration">
+          <div class="project-strip-overlay">
+            <div class="project-strip-tag">Category A Listed · Heritage</div>
+            <h3>Craighouse</h3>
+            <p>136 windows. Full restoration and manufacture for Category A listed property.</p>
+          </div>
+        </div>
+
+        <div class="project-strip-card">
+          <img src="Website updates - easy websites/Edinburgh windows and doors trump turnberry.jpg" alt="Trump Turnberry presidential commission">
+          <div class="project-strip-overlay">
+            <div class="project-strip-tag">Presidential Commission</div>
+            <h3>Trump Turnberry</h3>
+            <p>Ballistic glazing installation for Presidential visit to Scotland.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── FORM SECTION ─── -->
+  <section class="form-section" id="survey-form">
+    <div class="container-lp">
+      <div class="form-layout">
+
+        <div class="form-left">
+          <span class="section-label">Free survey</span>
+          <h2 class="section-heading">We'll come to you.<br>No obligation.</h2>
+          <p style="color: var(--muted); line-height: 1.75; margin-bottom: 1.5rem;">
+            One of our directors will visit, assess your windows, and give you a clear recommendation and quote. No pressure. No call centres. You'll hear from us within one working day.
+          </p>
+
+          <div class="qualification-block">
+            <strong>What happens after you submit?</strong>
+            <p>A director contacts you within one working day to arrange a convenient time. The survey is free and takes around 30–45 minutes. You'll leave with a written assessment and a fixed quote.</p>
+          </div>
+
+          <div class="trust-badges">
+            <img src="Website updates - easy websites/edinburgh windows and doors made in britain.jpg" alt="Made in Britain">
+            <img src="Website updates - easy websites/certificate.jpg" alt="Accredited heritage glazing specialist">
+          </div>
+        </div>
+
+        <div>
+          <div class="survey-form">
+            <h2>Book a Free Survey</h2>
+            <p class="form-sub">No obligation. A director will contact you within one working day.</p>
+
+            <form name="listed-building-survey" netlify>
+              <div class="form-field">
+                <label for="survey-name">Your Name</label>
+                <input type="text" id="survey-name" name="name" placeholder="e.g. James Robertson" required autocomplete="name">
+              </div>
+
+              <div class="form-field">
+                <label for="survey-phone">Phone Number</label>
+                <input type="tel" id="survey-phone" name="phone" placeholder="e.g. 07700 900123" required autocomplete="tel">
+              </div>
+
+              <div class="form-field">
+                <label for="survey-postcode">Postcode</label>
+                <input type="text" id="survey-postcode" name="postcode" placeholder="e.g. EH3 9BT" required autocomplete="postal-code">
+              </div>
+
+              <div class="form-field">
+                <label for="survey-property">Brief description of your property</label>
+                <input type="text" id="survey-property" name="property" placeholder="e.g. B-listed Georgian townhouse, 6 sash windows">
+              </div>
+
+              <button type="submit" class="form-submit" id="survey-submit">Book My Free Survey</button>
+              <p class="form-assurance">A director will contact you within one working day.</p>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── FAQ (AEO / FAQPage schema) ─── -->
+  <section class="faq-section">
+
+    <!-- FAQPage JSON-LD for Google rich results and AI answer engines -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Can you fit double glazing in a listed building in Edinburgh?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Edinburgh City Council maintains an approved list of heritage slim-line double glazing units that are permitted in listed and conservation area properties. We use high-performance gas-filled units (12mm to 16mm overall) that match the appearance of traditional single glazing while delivering modern thermal performance. All cases require listed building consent — we manage this on the client's behalf, and the materials and glazing units we use are pre-approved by Edinburgh City Council."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do I need planning permission to replace windows in a listed building?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "All window works on listed buildings in Scotland require listed building consent — whether your property is A-listed, B-listed, C-listed, or in a conservation area. We manage the consent process on the client's behalf as part of our service. The materials and glazing units we use are pre-approved by Edinburgh City Council, which makes the consent process significantly more straightforward."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is heritage slim-line double glazing?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Heritage slim-line double glazing uses thin gas-filled units — typically 12mm to 16mm overall — that fit within traditional timber sash and case window frames without altering their profile or appearance. These units are on Edinburgh City Council's approved list for use in listed and conservation area properties. Unlike bulkier standard double glazing, they maintain the authentic look of original sash windows while delivering meaningfully improved thermal and acoustic performance."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much does it cost to restore sash and case windows in a listed building?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The cost of upgrading or replacing sash and case windows in a listed building depends on the number of windows, their condition, and the glazing specification required. Our gas-filled slim-line glazing upgrade typically ranges from £1,200 to £3,000 per window depending on size, glazing type, and finish. Full restoration work will vary by condition. We provide a free survey and fixed written quote before any work begins."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How long does a sash window restoration take?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Most sash and case window restorations are completed within one to two days per window, depending on the level of repair required. For larger projects involving multiple windows, we typically phase the work to minimise disruption. Manufacture of replacement components is done in our Edinburgh workshop, with most lead times between four and eight weeks from survey to installation."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is linseed putty and why is it used in listed buildings?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Linseed putty is a traditional glazing compound made from linseed oil and whiting (chalk). It has been used in timber window frames for centuries and remains the material of choice for listed and conservation area properties in Scotland. Unlike modern synthetic compounds, linseed putty remains flexible as timber moves seasonally, bonds well with traditional paint systems, and is accepted by conservation officers. We use linseed putty as standard on all heritage restoration work."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can you upgrade just the glazing without replacing the sash box?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "This is survey dependent. The sash box must be structurally sound before a glazing-only upgrade can proceed. Where the box is in good condition, we can upgrade with new sashes fitted with gas-filled slim-line units (12mm–16mm), leaving the existing box frame in place. This is an eco-friendly option that retains the original timber, reduces waste, and is energy efficient. Our surveyor will confirm suitability at the free survey stage."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you supply windows nationally?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, we supply timber sash and case windows nationally across the UK. Our Edinburgh workshop manufactures bespoke windows to drawing for projects throughout Scotland, England, and Wales. Get in touch to discuss your project and we'll provide lead times and pricing for your location."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you work outside Edinburgh?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Our primary focus is Edinburgh and the Lothians, where we have the deepest knowledge of local conservation area requirements and council processes. We also take on projects in the wider Central Scotland area and have completed work in Aberdeen, Stirling, and across the Highlands. Contact us to discuss your project and location."
+          }
+        }
+      ]
+    }
+    </script>
+
+    <div class="container-lp">
+      <span class="section-label">Common questions</span>
+      <h2 class="section-heading">Frequently Asked Questions</h2>
+
+      <div class="faq-list" id="faqList">
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>Can you fit double glazing in a listed building in Edinburgh?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer" role="region">
+            <p>Yes. Edinburgh City Council maintains an approved list of heritage slim-line double glazing units permitted in listed and conservation area properties. We use high-performance <strong>gas-filled units (12mm–16mm)</strong> that match the appearance of traditional single glazing while delivering modern thermal performance. All cases require listed building consent — we manage this on the client's behalf, and our materials and glazing units are pre-approved by Edinburgh City Council.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>Do I need planning permission to replace windows in a listed building?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer" role="region">
+            <p><strong>All cases require listed building consent</strong> — whether your property is A-listed, B-listed, C-listed, or in a conservation area. We manage this process on your behalf and only use materials and glazing units pre-approved by Edinburgh City Council.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>What is heritage slim-line double glazing?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer" role="region">
+            <p>Heritage slim-line double glazing uses thin gas-filled units — typically <strong>12mm to 16mm overall</strong> — that fit within traditional timber sash frames without altering their profile or appearance. These units are on Edinburgh City Council's approved list for listed and conservation area properties and deliver meaningfully improved thermal and acoustic performance without changing the character of your windows.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>How much does it cost to restore sash and case windows in a listed building?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer" role="region">
+            <p>Our gas-filled slim-line glazing upgrade typically ranges from <strong>£1,200 to £3,000 per window</strong> depending on size, glazing specification, and finish. We provide a free survey and fixed written quote before any work begins — no surprises.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>How long does a sash window restoration take?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer" role="region">
+            <p>Most restorations are completed within <strong>one to two days per window</strong>. For larger projects we phase the work to minimise disruption. Most lead times from survey to installation are <strong>four to eight weeks</strong>.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>What is linseed putty and why is it used in listed buildings?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer" role="region">
+            <p>Linseed putty is a traditional glazing compound made from linseed oil and chalk, used in timber frames for centuries. Unlike modern compounds, it <strong>remains flexible as timber moves seasonally</strong>, bonds with traditional paint systems, and is accepted by conservation officers. We use it as standard on all heritage work.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>Can you replace just the glass without replacing the frames?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer" role="region">
+            <p>This is <strong>survey dependent</strong>. The sash box must be structurally sound before a glazing-only upgrade can go ahead. Where the box is in good condition, we can upgrade with new sashes fitted with gas-filled slim-line units (12mm–16mm), leaving the existing box frame intact. It's an eco-friendly option — the original timber is retained, waste is minimal, and the improved glazing significantly boosts energy efficiency. Our surveyor will confirm suitability at the free survey.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>Do you supply windows nationally?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer" role="region">
+            <p>Yes. We supply timber sash and case windows <strong>nationally across the UK</strong>. Our Edinburgh workshop manufactures bespoke windows to drawing for projects throughout Scotland, England, and Wales. Get in touch to discuss your project and we'll provide pricing and lead times for your location.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>Do you work outside Edinburgh?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer" role="region">
+            <p>Our primary focus is <strong>Edinburgh and the Lothians</strong>, where we have the deepest knowledge of local conservation requirements. We also take on projects across Central Scotland, Aberdeen, Stirling, and the Highlands. Contact us to discuss your location.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── TESTIMONIAL + FINAL PHONE ─── -->
+  <section class="testimonial-section">
+    <div class="testimonial-inner">
+      <div class="testimonial-stars">★★★★★</div>
+      <span class="quote-mark">"</span>
+      <p class="testimonial-text">
+        We had 16 sash and case windows restored throughout our listed Edinburgh property. The team were knowledgeable, tidy, and the finished result is outstanding. You'd never know the glazing had been upgraded — it looks completely original.
+      </p>
+      <div class="testimonial-attribution">Verified Trustpilot review · Edinburgh homeowner</div>
+
+      <div class="final-phone">
+        <p>Prefer to speak to someone directly?</p>
+        <a href="tel:01506168204">01506 168 204</a>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    // Hide full nav when ?ref=ads (or any paid source) is present
+    const params = new URLSearchParams(window.location.search);
+    const ref = params.get('ref');
+    const siteNav = document.getElementById('siteNav');
+    if (ref === 'ads' || ref === 'ppc' || ref === 'google') {
+      siteNav.style.display = 'none';
+      document.querySelector('.hero').style.paddingTop = '0';
+    }
+
+    // Scroll effect on nav
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 50) {
+        siteNav.classList.add('scrolled');
+      } else {
+        siteNav.classList.remove('scrolled');
+      }
+    });
+
+    // Mobile hamburger
+    const hamburger = document.querySelector('.hamburger');
+    hamburger.addEventListener('click', () => {
+      siteNav.classList.toggle('mobile-open');
+    });
+    document.querySelectorAll('.nav-center a').forEach(link => {
+      link.addEventListener('click', () => siteNav.classList.remove('mobile-open'));
+    });
+
+    // FAQ accordion
+    document.querySelectorAll('.faq-question').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const item = btn.closest('.faq-item');
+        const isOpen = item.classList.contains('open');
+        // Close all
+        document.querySelectorAll('.faq-item.open').forEach(el => {
+          el.classList.remove('open');
+          el.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
+        });
+        // Open clicked (if it wasn't already open)
+        if (!isOpen) {
+          item.classList.add('open');
+          btn.setAttribute('aria-expanded', 'true');
+        }
+      });
+    });
+
+    // Smooth scroll to form for CTA buttons
+    document.querySelectorAll('a[href="#survey-form"]').forEach(link => {
+      link.addEventListener('click', e => {
+        e.preventDefault();
+        document.getElementById('survey-form').scrollIntoView({ behavior: 'smooth', block: 'start' });
+      });
+    });
+  </script>
+
+</body>
+</html>

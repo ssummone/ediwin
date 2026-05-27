@@ -1,6 +1,18 @@
+# Next.js
+.next/
+out/
+node_modules/
+*.tsbuildinfo
+next-env.d.ts
+
+# Misc
 .DS_Store
-*.pdf
-*.docx
-*.md
-Website updates - easy websites/
+*.pem
+.env*
+!.env.example
+
+# Vercel
 .vercel
+
+# Debug
+npm-debug.log*

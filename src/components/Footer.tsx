@@ -65,23 +65,34 @@ export default function Footer() {
         </div>
       </div>
 
-      {/* Partner logos strip */}
-      <div className="footer-partners">
-        <a href="https://www.accoya.com/uk/#where-to-buy" target="_blank" rel="noopener noreferrer" className="footer-partner-link" aria-label="Accoya approved manufacturer">
-          <Image src="/images/Accoya_Affiliate mark_Approved manufacturer_WHITE ON GREEN_RGB.jpg" alt="Accoya Approved Manufacturer" width={120} height={48} style={{ height: '48px', width: 'auto' }} />
-        </a>
-        <a href="https://www.fineoglass.eu/" target="_blank" rel="noopener noreferrer" className="footer-partner-link" aria-label="Fineo glass supplier">
-          <span className="footer-partner-text">Fineo Glass</span>
-        </a>
-        <a href="https://www.trustedtrader.scot/Edinburgh/Edinburgh-Windows-an-0002416.html" target="_blank" rel="noopener noreferrer" className="footer-partner-link" aria-label="Edinburgh Trusted Trader">
-          <span className="footer-partner-text">✓ Trusted Trader</span>
-        </a>
-      </div>
-
-      <div className="footer-copyright">
-        <p>&copy; {new Date().getFullYear()} Edinburgh Windows and Doors. All rights reserved. Scottish timber manufacturer.</p>
+      {/* Legal footer strip */}
+      <div className="footer-legal">
+        <div className="footer-legal-text">
+          <p>
+            Website by{' '}
+            <a href="https://www.summone.co.uk" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--orange)' }}>
+              Summone Consulting
+            </a>
+            . Copyright &copy; {new Date().getFullYear()} — All Rights Reserved.
+          </p>
+          <p>Edinburgh Windows and Doors Limited trading as EWD Sash &amp; Case.</p>
+          <p>
+            Registered Address: 2c Young Square, Brucefield Industrial Estate, Livingston, EH54 9BX.
+            Registered in Scotland | Company Number: SC648002
+          </p>
+        </div>
+        <div className="footer-legal-logos">
+          <a href="https://www.trustedtrader.scot/Edinburgh/Edinburgh-Windows-an-0002416.html" target="_blank" rel="noopener noreferrer" className="footer-legal-logo-link" aria-label="Edinburgh Trusted Trader">
+            <Image src="/images/edinburgh-trusted-trader.webp" alt="Edinburgh Trusted Trader" width={100} height={52} style={{ height: '52px', width: 'auto' }} />
+          </a>
+          <a href="https://www.fineoglass.eu/" target="_blank" rel="noopener noreferrer" className="footer-legal-logo-link" aria-label="Fineo glass">
+            <Image src="/images/logo-fineo.webp" alt="Fineo Glass by AGC" width={80} height={52} style={{ height: '52px', width: 'auto' }} />
+          </a>
+          <a href="https://www.accoya.com/uk/#where-to-buy" target="_blank" rel="noopener noreferrer" className="footer-legal-logo-link" aria-label="Accoya approved manufacturer">
+            <Image src="/images/Accoya_Affiliate mark_Approved manufacturer_WHITE ON GREEN_RGB.jpg" alt="Accoya Approved Manufacturer" width={110} height={52} style={{ height: '52px', width: 'auto' }} />
+          </a>
+        </div>
       </div>
     </footer>
   );
 }
-

@@ -35,16 +35,19 @@ export default function CompositeDoors() {
                 <li>✓ Select hardware — handles, knockers, letterplates</li>
                 <li>✓ Preview your design before ordering</li>
               </ul>
-              <a href="https://portico.portal.bm-touch.co.uk/launch/edinburgh-windows-and-doo462" target="_blank" rel="noopener noreferrer" className="btn btn-primary btn-lg">Open Door Designer →</a>
+              <a href="https://portico.portal.bm-touch.co.uk/launch/edinburgh-windows-and-doo462" target="_blank" rel="noopener noreferrer" className="btn btn-primary btn-lg">Design Your Own Door →</a>
             </div>
-            <div style={{ textAlign: 'center' }}>
-              <Image
-              src="/images/composite door 2.png"
-              alt="Composite door design options"
-              width={500}
-              height={550}
-              style={{ width: '100%', height: 'auto', borderRadius: '4px', maxWidth: '420px' }}
-            />
+            <div>
+              <a href="https://portico.portal.bm-touch.co.uk/launch/edinburgh-windows-and-doo462" target="_blank" rel="noopener noreferrer" style={{ display: 'block' }}>
+                <Image
+                  src="/images/door-designer-preview.png"
+                  alt="Edinburgh Windows and Doors composite door designer — click to open"
+                  width={600}
+                  height={420}
+                  style={{ width: '100%', height: 'auto', borderRadius: '8px', boxShadow: '0 8px 32px rgba(0,0,0,0.35)', transition: 'transform 0.2s ease', cursor: 'pointer' }}
+                />
+                <p style={{ color: 'rgba(255,255,255,0.6)', fontSize: '0.82rem', textAlign: 'center', marginTop: '0.75rem' }}>Click to open the door designer →</p>
+              </a>
             </div>
           </div>
         </div>

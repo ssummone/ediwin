@@ -32,7 +32,7 @@ export default function Nav() {
             <Link href="/sash-windows" onClick={() => setMobileOpen(false)}>Sash &amp; Case Windows</Link>
             <Link href="/accoya-doors" onClick={() => setMobileOpen(false)}>Accoya Timber Doors</Link>
             <Link href="/secondary-glazing" onClick={() => setMobileOpen(false)}>Secondary Glazing</Link>
-            <Link href="/contact" onClick={() => setMobileOpen(false)}>Composite Doors</Link>
+            <Link href="/composite-doors" onClick={() => setMobileOpen(false)}>Composite Doors</Link>
             <Link href="/listed-buildings" onClick={() => setMobileOpen(false)}>Listed Buildings</Link>
             <Link href="/repairs" onClick={() => setMobileOpen(false)}>Repairs</Link>
           </div>

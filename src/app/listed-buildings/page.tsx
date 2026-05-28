@@ -62,6 +62,27 @@ export default function ListedBuildingsPage() {
         </div>
       </section>
 
+      <section className="light-bg" style={{ marginTop: 0 }}>
+        <div className="container">
+          <h2 className="section-title">Frequently Asked Questions</h2>
+          <div className="faq-list">
+            {[
+              { q: 'Do I need planning permission to replace windows in a listed building?', a: 'Yes — Listed Building Consent is required for any alterations to a listed building, including window replacement. Edinburgh City Council\'s conservation officers will assess any application. We can provide full product specifications and compliance documentation to support your application.' },
+              { q: 'What glazing is approved for listed buildings in Scotland?', a: 'Historic Environment Scotland recognises several approved options including Fineo ultra-thin vacuum insulated glass, slim-line heritage double-glazed units, and secondary glazing. The most appropriate solution depends on your specific building and conservation officer\'s requirements.' },
+              { q: 'What is Fineo glass?', a: 'Fineo is an ultra-thin vacuum insulated glass unit that fits within traditional single-glazed rebates. It delivers outstanding thermal performance while maintaining the appearance of the original single glazing from the outside. It is particularly suited to Category A listed buildings.' },
+              { q: 'Can I have double glazing in a listed building?', a: 'In many cases yes, with the right specification. Slim-line heritage units and Fineo glass are designed to be approved by conservation officers. The key is using the right product and providing the correct documentation. We can guide you through this process.' },
+              { q: 'Do you work on Category A listed buildings?', a: 'Yes. Our most significant heritage project was Craighouse — 136 windows for a Category A listed property, approved by Historic Environment Scotland. We have a strong track record on Scotland\'s most protected buildings.' },
+              { q: 'How do I know if my property is listed?', a: 'You can check on the Canmore or Historic Environment Scotland databases. Category A is the highest level of protection (around 8% of listed buildings), Category B is the most common. Conservation areas — which don\'t confer listed status — also have their own restrictions.' },
+            ].map(({ q, a }) => (
+              <details key={q} className="faq-item">
+                <summary className="faq-question">{q}</summary>
+                <div className="faq-answer"><p>{a}</p></div>
+              </details>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <section className="navy-bg">
         <div className="container" style={{ textAlign: 'center' }}>
           <h2 style={{ color: '#fff' }}>Working on a listed building?</h2>

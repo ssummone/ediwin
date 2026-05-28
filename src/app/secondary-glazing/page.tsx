@@ -34,7 +34,7 @@ export default function SecondaryGlazingPage() {
                 <li>Improves U-value without replacing original windows</li>
                 <li>Reduces noise by up to 80%</li>
                 <li>Removable — no permanent modification to the building</li>
-                <li>Pre-approved by Edinburgh City Council</li>
+                <li>Recognised by Edinburgh City Council conservation officers</li>
               </ul>
             </div>
           </div>
@@ -51,6 +51,27 @@ export default function SecondaryGlazingPage() {
             <div className="feature-box"><h3>Side-Hung Casement</h3><p>Hinged on one side, opens like a door. Ideal for wide windows or French door openings.</p></div>
             <div className="feature-box"><h3>Acoustic Grade</h3><p>Laminated glass with large air gap. Significant noise reduction. Ideal for city-centre properties.</p></div>
             <div className="feature-box"><h3>Thermal Grade</h3><p>Argon-filled sealed unit in secondary position. Maximum thermal improvement for period homes.</p></div>
+          </div>
+        </div>
+      </section>
+
+      <section className="light-bg">
+        <div className="container">
+          <h2 className="section-title">Frequently Asked Questions</h2>
+          <div className="faq-list">
+            {[
+              { q: 'Does secondary glazing need planning permission?', a: 'In most cases, no planning permission is needed for secondary glazing. Because the original windows are not altered and the secondary panels are on the inside, it is generally accepted even in conservation areas and listed buildings. Always confirm with your local authority for listed buildings.' },
+              { q: 'Can secondary glazing be removed?', a: 'Yes — that\'s one of its key advantages. Our secondary glazing is designed to be removable, making it ideal for the summer months or for maintenance purposes. It can be taken down and stored when not needed.' },
+              { q: 'How much noise does secondary glazing reduce?', a: 'Our acoustic-grade secondary glazing can reduce noise by up to 80%, making it one of the most effective solutions for city-centre properties or those near busy roads. The large air gap between the original window and the secondary panel is key to this performance.' },
+              { q: 'Will secondary glazing affect the look of my windows?', a: 'Secondary glazing is fitted internally and is invisible from outside. Inside, slim aluminium frames are used which are designed to be as unobtrusive as possible. Most clients find them barely noticeable.' },
+              { q: 'Is secondary glazing better than replacing my windows?', a: 'For listed buildings and conservation area properties, secondary glazing is often the only compliant option. Even where replacement is permitted, secondary glazing can be a cost-effective way to dramatically improve thermal and acoustic performance while retaining original windows.' },
+              { q: 'Do you install secondary glazing Scotland-wide?', a: 'Yes. We install secondary glazing across Edinburgh, Glasgow, and throughout Scotland. Contact us to discuss your property and arrange a survey.' },
+            ].map(({ q, a }) => (
+              <details key={q} className="faq-item">
+                <summary className="faq-question">{q}</summary>
+                <div className="faq-answer"><p>{a}</p></div>
+              </details>
+            ))}
           </div>
         </div>
       </section>

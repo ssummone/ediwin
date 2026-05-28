@@ -73,6 +73,28 @@ export default function AccoyaDoorsPage() {
         </div>
       </section>
 
+      <section className="light-bg">
+        <div className="container">
+          <h2 className="section-title">Frequently Asked Questions</h2>
+          <div className="faq-list">
+            {[
+              { q: 'What is Accoya wood?', a: 'Accoya is a modified timber produced by acetylating sustainably sourced softwood. The process transforms the wood at a molecular level, creating a material that is dimensionally stable, rot-resistant, and suitable for the most demanding environments. It carries a 50-year above-ground guarantee.' },
+              { q: 'Why choose Accoya over hardwood?', a: 'Accoya outperforms hardwood in every practical measure: it does not shrink or swell like hardwood, holds paint far better, is guaranteed against rot for 50 years, and is produced from sustainably managed forests. Over its lifetime it is significantly cheaper to maintain.' },
+              { q: 'Is Accoya approved for listed buildings?', a: 'Yes. Accoya timber is recognised by Historic Environment Scotland as a suitable material for listed buildings and conservation area properties. We have installed Accoya doors and windows on many Category A and B listed buildings across Scotland.' },
+              { q: 'What paint can I use on an Accoya door?', a: 'Any quality exterior paint system can be used on Accoya, and it holds paint better than any other timber species. We apply a primer and two-coat finish in the workshop before delivery. Any RAL colour is available.' },
+              { q: 'How long does an Accoya door take to make?', a: 'Lead times depend on complexity and current order book, but typically 6–10 weeks from order to delivery. We\'ll give you a firm lead time at quotation.' },
+              { q: 'Do Accoya doors need maintenance?', a: 'Accoya doors need far less maintenance than untreated timber. A quality paint system will last significantly longer on Accoya than on standard timber. We recommend an inspection and touch-up every 5–7 years, compared to 2–3 years for standard timber.' },
+              { q: 'Can you match an existing door?', a: 'Yes. We work from drawings, photographs, or site measurements to replicate existing door profiles, mouldings, and glazing patterns. This is particularly important for listed buildings where like-for-like replacement is a planning requirement.' },
+            ].map(({ q, a }) => (
+              <details key={q} className="faq-item">
+                <summary className="faq-question">{q}</summary>
+                <div className="faq-answer"><p>{a}</p></div>
+              </details>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <section className="navy-bg">
         <div className="container" style={{ textAlign: 'center' }}>
           <h2 style={{ color: '#fff' }}>Ready to specify an Accoya door?</h2>

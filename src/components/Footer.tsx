@@ -40,6 +40,19 @@ export default function Footer() {
           </ul>
         </div>
         <div className="footer-col">
+          <h3>Locations</h3>
+          <ul>
+            <li><Link href="/locations/glasgow">Glasgow</Link></li>
+            <li><Link href="/locations/east-lothian">East Lothian</Link></li>
+            <li><Link href="/locations/stirling">Stirling</Link></li>
+            <li><Link href="/locations/dundee">Dundee</Link></li>
+            <li><Link href="/locations/aberdeen">Aberdeen</Link></li>
+            <li><Link href="/locations/fife">Fife</Link></li>
+            <li><Link href="/locations/highlands">Highlands</Link></li>
+            <li><Link href="/locations/england">England &amp; UK-Wide</Link></li>
+          </ul>
+        </div>
+        <div className="footer-col">
           <h3>Contact</h3>
           <div className="footer-contact-info">
             <p><strong>Phone:</strong><br />01506 168 204</p>

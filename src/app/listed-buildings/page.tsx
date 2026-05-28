@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 export const metadata: Metadata = {
   title: 'Listed Building Windows & Doors | Heritage Window Specialists Edinburgh',
-  description: 'Specialist timber windows and doors for listed buildings and conservation areas. Pre-approved by Edinburgh City Council. Category A & B listed building specialists.',
+  description: 'Specialist timber windows and doors for listed buildings and conservation areas across Scotland. Category A & B listed building experience. Heritage glazing specialists.',
 };
 
 export default function ListedBuildingsPage() {
@@ -16,9 +16,9 @@ export default function ListedBuildingsPage() {
         </video>
         <div className="hero-overlay" />
         <div className="hero-content">
-          <span className="hero-eyebrow">Heritage Glazing Specialists · Edinburgh</span>
-          <h1>Sash and Case Windows for Listed Buildings in Edinburgh</h1>
-          <p className="hero-sub">Approved heritage glazing. Traditional timber manufacture. Survey to installation across Edinburgh.</p>
+          <span className="hero-eyebrow">Heritage Glazing Specialists · Scotland</span>
+          <h1>Sash and Case Windows for Listed Buildings</h1>
+          <p className="hero-sub">Approved heritage glazing. Traditional timber manufacture. Survey to installation across Scotland and the UK.</p>
           <div className="hero-ctas">
             <Link href="/contact" className="btn btn-primary btn-lg">Book a Free Survey</Link>
             <Link href="tel:01506168204" className="btn btn-white btn-lg">📞 01506 168 204</Link>
@@ -32,15 +32,15 @@ export default function ListedBuildingsPage() {
           <div className="two-col">
             <Image src="/images/Edinburgh property full sash and case refurbishment.JPG" alt="Listed building window refurbishment" width={600} height={450} style={{ width: '100%', height: 'auto', borderRadius: '4px' }} />
             <div>
-              <h2>Pre-approved for Edinburgh&apos;s listed properties</h2>
-              <p>We are an approved supplier of heritage glazing units, with our products pre-approved by Edinburgh City Council for use in listed and conservation area properties across the city.</p>
-              <p style={{ marginTop: '1rem' }}>This means faster planning approvals for your project — we&apos;ve already done the legwork so your conservation officer doesn&apos;t have to.</p>
+              <h2>Experienced in Scotland&apos;s listed building requirements</h2>
+              <p>We are an approved Accoya manufacturer and supplier of heritage glazing units, with extensive experience working on listed and conservation area properties across Edinburgh and Scotland. Please note that planning permission will still be required for your project — we work closely with conservation officers and can provide full product specifications and compliance documentation to support your application.</p>
+              <p style={{ marginTop: '1rem' }}>Our products are recognised by Historic Environment Scotland and Edinburgh City Council, and we have a strong track record of successful planning outcomes on Category A and B listed properties.</p>
               <ul className="feature-list" style={{ marginTop: '1.5rem' }}>
-                <li>Pre-approved by Edinburgh City Council</li>
+                <li>Experienced with Edinburgh City Council conservation officers</li>
                 <li>Compliant with Historic Environment Scotland guidance</li>
                 <li>Category A and B listed building experience</li>
-                <li>Fineo vacuum glass for ultra-thin heritage glazing</li>
-                <li>Accoya timber — approved for heritage use</li>
+                <li>Fineo ultra-thin vacuum insulated glass for heritage properties</li>
+                <li>Accoya timber — recognised for heritage use by HES</li>
                 <li>Craighouse: 136 windows, Category A listed</li>
               </ul>
             </div>
@@ -54,7 +54,7 @@ export default function ListedBuildingsPage() {
           <div className="features-grid">
             <div className="feature-box"><h3>Replica Sash Windows</h3><p>Exact replicas of original windows. Match existing profiles, mouldings, and hardware to planning specification.</p></div>
             <div className="feature-box"><h3>Heritage Secondary Glazing</h3><p>Retain original windows, add internal secondary panel. Planning-friendly thermal improvement.</p></div>
-            <div className="feature-box"><h3>Fineo Glass</h3><p>Vacuum glass in an ultra-thin format. Virtually invisible from outside. Outstanding thermal performance.</p></div>
+            <div className="feature-box"><h3>Fineo Glass</h3><p>Ultra-thin vacuum insulated glass delivering outstanding thermal performance while preserving the appearance of traditional glazing.</p></div>
             <div className="feature-box"><h3>Accoya Doors</h3><p>Replica period doors in Accoya. 50-year guarantee. Accepted by Historic Environment Scotland.</p></div>
             <div className="feature-box"><h3>Conservation Area Work</h3><p>We understand conservation area requirements across Edinburgh, Glasgow, and historic Scottish towns.</p></div>
             <div className="feature-box"><h3>Planning Support</h3><p>We can provide product specifications and compliance documentation to support your planning application.</p></div>

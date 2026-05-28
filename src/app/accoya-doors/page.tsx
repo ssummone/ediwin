@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 export default function AccoyaDoorsPage() {
   return (
     <>
-      <div className="hero-internal" style={{ backgroundImage: "url('/images/Accoya timber front door bespoke.jpg')" }}>
+      <div className="hero-internal" style={{ backgroundImage: "url('/images/Accoya front door.png')" }}>
         <div className="hero-content">
           <h1>Accoya Timber Doors — 50-Year Guarantee</h1>
           <p className="hero-sub">Bespoke Accoya timber doors made in Edinburgh. Dimensionally stable, rot-resistant, and approved for use in Scotland&apos;s most demanding heritage environments.</p>
@@ -51,6 +51,30 @@ export default function AccoyaDoorsPage() {
             <div className="feature-box"><h3>Heritage Doors</h3><p>Replicas of original doors for Category A and B listed buildings. Match existing ironmongery.</p></div>
             <div className="feature-box"><h3>Stable Doors</h3><p>Top and bottom opening stable doors in Accoya. Popular for coastal and rural properties.</p></div>
             <div className="feature-box"><h3>Commercial Entrance</h3><p>Heavy-duty Accoya entrance doors for hotels, offices, and commercial buildings.</p></div>
+          </div>
+        </div>
+      </section>
+
+      {/* Photo gallery */}
+      <section>
+        <div className="container">
+          <span className="section-eyebrow">Our Work</span>
+          <h2 className="section-title">Accoya Doors by Edinburgh Windows &amp; Doors</h2>
+          <div className="door-gallery">
+            {[
+              { src: '/images/Accoya doors by ew&d.png', alt: 'Accoya doors by Edinburgh Windows & Doors' },
+              { src: '/images/Accoya front door.png', alt: 'Accoya timber front door' },
+              { src: '/images/Blue accoya door.png', alt: 'Blue painted Accoya door' },
+              { src: '/images/accoya door with brass letterplate.png', alt: 'Accoya door with brass letterplate' },
+              { src: '/images/Accoya french doors.png', alt: 'Accoya French doors Edinburgh' },
+              { src: '/images/Interior accoya door.png', alt: 'Interior Accoya timber door' },
+              { src: '/images/Accoya door pre paint.png', alt: 'Accoya door pre-paint finish' },
+              { src: '/images/accoya door manufacture.jpeg', alt: 'Accoya door manufacture Edinburgh' },
+            ].map(({ src, alt }) => (
+              <div key={src} className="door-gallery-item">
+                <Image src={src} alt={alt} fill style={{ objectFit: 'cover' }} />
+              </div>
+            ))}
           </div>
         </div>
       </section>

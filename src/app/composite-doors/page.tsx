@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 export default function CompositeDoors() {
   return (
     <>
-      <div className="hero-internal" style={{ backgroundImage: "url('/images/traditional mews house front door.jpg')" }}>
+      <div className="hero-internal" style={{ backgroundImage: "url('/images/composite door.png')" }}>
         <div className="hero-content">
           <h1>Composite Doors — Designed Online, Installed Perfectly</h1>
           <p className="hero-sub">High-performance composite doors designed to your exact specification. Use our online door designer, then let us handle supply and installation across Scotland.</p>
@@ -39,12 +39,12 @@ export default function CompositeDoors() {
             </div>
             <div style={{ textAlign: 'center' }}>
               <Image
-                src="/images/Accoya timber front door bespoke.jpg"
-                alt="Composite door design options"
-                width={500}
-                height={550}
-                style={{ width: '100%', height: 'auto', borderRadius: '4px', maxWidth: '420px' }}
-              />
+              src="/images/composite door 2.png"
+              alt="Composite door design options"
+              width={500}
+              height={550}
+              style={{ width: '100%', height: 'auto', borderRadius: '4px', maxWidth: '420px' }}
+            />
             </div>
           </div>
         </div>
@@ -89,8 +89,8 @@ export default function CompositeDoors() {
         <div className="container">
           <div className="two-col">
             <Image
-              src="/images/Accoya door.jpeg"
-              alt="Door installation service"
+              src="/images/composite door 3.png"
+              alt="Composite door installation service"
               width={600}
               height={450}
               style={{ width: '100%', height: 'auto', borderRadius: '4px' }}

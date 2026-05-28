@@ -102,8 +102,8 @@ export default function Home() {
                 <p>Heritage compliant, removable panels</p>
               </div>
             </Link>
-            <Link href="/contact" className="product-card">
-              <Image src="/images/Accoya door.jpeg" alt="Composite doors" fill style={{ objectFit: 'cover' }} />
+            <Link href="/composite-doors" className="product-card">
+              <Image src="/images/Composite Door sample.jpg" alt="Composite doors Edinburgh" fill style={{ objectFit: 'cover' }} />
               <div className="product-overlay">
                 <h3>Composite Doors</h3>
                 <p>Modern performance with classic style</p>

@@ -183,6 +183,16 @@ nav.scrolled {
   align-items: center;
 }
 
+/* Desktop: nav-mobile-panel is an invisible passthrough wrapper */
+.nav-mobile-panel {
+  display: contents;
+}
+
+/* Hidden on desktop — only shown inside mobile media query */
+.nav-ctas-mobile {
+  display: none;
+}
+
 .hamburger {
   display: none;
   flex-direction: column;

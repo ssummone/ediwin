@@ -35,6 +35,7 @@ export default function Nav() {
               <Link href="/secondary-glazing" onClick={() => setMobileOpen(false)}>Secondary Glazing</Link>
               <Link href="/composite-doors" onClick={() => setMobileOpen(false)}>Composite Doors</Link>
               <Link href="/listed-buildings" onClick={() => setMobileOpen(false)}>Listed Buildings</Link>
+              <Link href="/heritage-restorations" onClick={() => setMobileOpen(false)}>Heritage Restorations</Link>
               <Link href="/repairs" onClick={() => setMobileOpen(false)}>Repairs</Link>
             </div>
           </div>

@@ -41,8 +41,8 @@ export default function HeritageRestorationsPage() {
             </div>
             <div>
               <Image
-                src="/images/traditional mews house front door.jpg"
-                alt="Heritage timber window restoration Edinburgh"
+                src="/images/sash window manufacture.jpeg"
+                alt="Heritage sash window manufacture Edinburgh"
                 width={560}
                 height={420}
                 style={{ width: '100%', height: 'auto', borderRadius: '4px' }}

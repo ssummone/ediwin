@@ -25,6 +25,17 @@ export default function Home() {
             <Link href="/contact" className="btn btn-primary btn-lg">Book a Survey</Link>
             <Link href="/trade" className="btn btn-white btn-lg">Request Trade Pricing</Link>
           </div>
+          <div style={{ marginTop: '1rem' }}>
+            <a
+              href="/images/ewd-brochure-300dpi.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              download="EWD-Brochure.pdf"
+              className="btn btn-outline-light btn-lg"
+            >
+              ↓ Download our Brochure
+            </a>
+          </div>
         </div>
       </div>
 

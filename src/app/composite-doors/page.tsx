@@ -24,31 +24,17 @@ export default function CompositeDoors() {
       {/* Door designer CTA */}
       <section style={{ background: 'var(--navy)', padding: '3rem 2rem' }}>
         <div className="container">
-          <div className="two-col" style={{ alignItems: 'center', gap: '3rem' }}>
-            <div>
-              <span className="section-eyebrow" style={{ color: 'var(--orange)' }}>Online Door Designer</span>
-              <h2 style={{ color: '#fff', fontSize: '2rem', marginBottom: '1rem' }}>Design your door in minutes</h2>
-              <p style={{ color: 'rgba(255,255,255,0.8)', lineHeight: 1.7, marginBottom: '1.5rem' }}>Use our interactive door designer to choose your style, colour, glazing, and hardware. See exactly what your door will look like before you order — then send us your design and we&apos;ll take care of everything.</p>
-              <ul style={{ color: 'rgba(255,255,255,0.75)', lineHeight: 2, listStyle: 'none', marginBottom: '2rem' }}>
-                <li>✓ Hundreds of door styles and colour options</li>
-                <li>✓ Choose glazing panels and decorative glass</li>
-                <li>✓ Select hardware — handles, knockers, letterplates</li>
-                <li>✓ Preview your design before ordering</li>
-              </ul>
-              <a href="https://portico.portal.bm-touch.co.uk/launch/edinburgh-windows-and-doo462" target="_blank" rel="noopener noreferrer" className="btn btn-primary btn-lg">Design Your Own Door →</a>
-            </div>
-            <div>
-              <a href="https://portico.portal.bm-touch.co.uk/launch/edinburgh-windows-and-doo462" target="_blank" rel="noopener noreferrer" style={{ display: 'block' }}>
-                <Image
-                  src="/images/door-designer-preview.png"
-                  alt="Edinburgh Windows and Doors composite door designer — click to open"
-                  width={600}
-                  height={420}
-                  style={{ width: '100%', height: 'auto', borderRadius: '8px', boxShadow: '0 8px 32px rgba(0,0,0,0.35)', transition: 'transform 0.2s ease', cursor: 'pointer' }}
-                />
-                <p style={{ color: 'rgba(255,255,255,0.6)', fontSize: '0.82rem', textAlign: 'center', marginTop: '0.75rem' }}>Click to open the door designer →</p>
-              </a>
-            </div>
+          <div style={{ maxWidth: '680px' }}>
+            <span className="section-eyebrow" style={{ color: 'var(--orange)' }}>Online Door Designer</span>
+            <h2 style={{ color: '#fff', fontSize: '2rem', marginBottom: '1rem' }}>Design your door in minutes</h2>
+            <p style={{ color: 'rgba(255,255,255,0.8)', lineHeight: 1.7, marginBottom: '1.5rem' }}>Use our interactive door designer to choose your style, colour, glazing, and hardware. See exactly what your door will look like before you order — then send us your design and we&apos;ll take care of everything.</p>
+            <ul style={{ color: 'rgba(255,255,255,0.75)', lineHeight: 2, listStyle: 'none', marginBottom: '2rem' }}>
+              <li>✓ Hundreds of door styles and colour options</li>
+              <li>✓ Choose glazing panels and decorative glass</li>
+              <li>✓ Select hardware — handles, knockers, letterplates</li>
+              <li>✓ Preview your design before ordering</li>
+            </ul>
+            <a href="https://portico.portal.bm-touch.co.uk/launch/edinburgh-windows-and-doo462" target="_blank" rel="noopener noreferrer" className="btn btn-primary btn-lg">Design Your Own Door →</a>
           </div>
         </div>
       </section>

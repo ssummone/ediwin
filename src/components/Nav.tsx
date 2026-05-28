@@ -25,23 +25,30 @@ export default function Nav() {
         />
       </Link>
 
-      <div className="nav-center">
-        <div className="nav-dropdown">
-          <Link href="/#products" onClick={() => setMobileOpen(false)}>Products</Link>
-          <div className="dropdown-menu">
-            <Link href="/sash-windows" onClick={() => setMobileOpen(false)}>Sash &amp; Case Windows</Link>
-            <Link href="/accoya-doors" onClick={() => setMobileOpen(false)}>Accoya Timber Doors</Link>
-            <Link href="/secondary-glazing" onClick={() => setMobileOpen(false)}>Secondary Glazing</Link>
-            <Link href="/composite-doors" onClick={() => setMobileOpen(false)}>Composite Doors</Link>
-            <Link href="/listed-buildings" onClick={() => setMobileOpen(false)}>Listed Buildings</Link>
-            <Link href="/repairs" onClick={() => setMobileOpen(false)}>Repairs</Link>
+      <div className="nav-mobile-panel">
+        <div className="nav-center">
+          <div className="nav-dropdown">
+            <Link href="/#products" onClick={() => setMobileOpen(false)}>Products</Link>
+            <div className="dropdown-menu">
+              <Link href="/sash-windows" onClick={() => setMobileOpen(false)}>Sash &amp; Case Windows</Link>
+              <Link href="/accoya-doors" onClick={() => setMobileOpen(false)}>Accoya Timber Doors</Link>
+              <Link href="/secondary-glazing" onClick={() => setMobileOpen(false)}>Secondary Glazing</Link>
+              <Link href="/composite-doors" onClick={() => setMobileOpen(false)}>Composite Doors</Link>
+              <Link href="/listed-buildings" onClick={() => setMobileOpen(false)}>Listed Buildings</Link>
+              <Link href="/repairs" onClick={() => setMobileOpen(false)}>Repairs</Link>
+            </div>
           </div>
+          <Link href="/commercial" onClick={() => setMobileOpen(false)}>Commercial</Link>
+          <Link href="/trade" onClick={() => setMobileOpen(false)}>Trade</Link>
+          <Link href="/projects" onClick={() => setMobileOpen(false)}>Projects</Link>
+          <Link href="/news" onClick={() => setMobileOpen(false)}>News</Link>
+          <Link href="/contact" onClick={() => setMobileOpen(false)}>Contact</Link>
         </div>
-        <Link href="/commercial" onClick={() => setMobileOpen(false)}>Commercial</Link>
-        <Link href="/trade" onClick={() => setMobileOpen(false)}>Trade</Link>
-        <Link href="/projects" onClick={() => setMobileOpen(false)}>Projects</Link>
-        <Link href="/news" onClick={() => setMobileOpen(false)}>News</Link>
-        <Link href="/contact" onClick={() => setMobileOpen(false)}>Contact</Link>
+
+        <div className="nav-ctas-mobile">
+          <Link href="/trade" className="btn btn-outline">Trade Account</Link>
+          <Link href="/contact" className="btn btn-primary">Book a Survey</Link>
+        </div>
       </div>
 
       <div className="nav-ctas">

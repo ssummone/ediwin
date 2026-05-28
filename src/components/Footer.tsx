@@ -88,6 +88,9 @@ export default function Footer() {
           <a href="https://www.fineoglass.eu/" target="_blank" rel="noopener noreferrer" className="footer-legal-logo-link" aria-label="Fineo glass">
             <Image src="/images/logo-fineo.webp" alt="Fineo Glass by AGC" width={80} height={52} style={{ height: '52px', width: 'auto' }} />
           </a>
+          <a href="https://www.historicenvironment.scot/" target="_blank" rel="noopener noreferrer" className="footer-legal-logo-link" aria-label="Historic Environment Scotland">
+            <Image src="/images/historic-scotland.webp" alt="Historic Environment Scotland" width={100} height={52} style={{ height: '52px', width: 'auto' }} />
+          </a>
           <a href="https://www.accoya.com/uk/#where-to-buy" target="_blank" rel="noopener noreferrer" className="footer-legal-logo-link" aria-label="Accoya approved manufacturer">
             <Image src="/images/Accoya_Affiliate mark_Approved manufacturer_WHITE ON GREEN_RGB.jpg" alt="Accoya Approved Manufacturer" width={110} height={52} style={{ height: '52px', width: 'auto' }} />
           </a>

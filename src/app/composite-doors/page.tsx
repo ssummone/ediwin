@@ -22,19 +22,21 @@ export default function CompositeDoors() {
       </div>
 
       {/* Door designer CTA */}
-      <section style={{ background: 'var(--navy)', padding: '3rem 2rem' }}>
+      <section style={{ background: 'var(--navy)', padding: '4rem 2rem', textAlign: 'center' }}>
         <div className="container">
-          <div style={{ maxWidth: '680px' }}>
+          <div style={{ maxWidth: '680px', margin: '0 auto' }}>
             <span className="section-eyebrow" style={{ color: 'var(--orange)' }}>Online Door Designer</span>
             <h2 style={{ color: '#fff', fontSize: '2rem', marginBottom: '1rem' }}>Design your door in minutes</h2>
             <p style={{ color: 'rgba(255,255,255,0.8)', lineHeight: 1.7, marginBottom: '1.5rem' }}>Use our interactive door designer to choose your style, colour, glazing, and hardware. See exactly what your door will look like before you order — then send us your design and we&apos;ll take care of everything.</p>
-            <ul style={{ color: 'rgba(255,255,255,0.75)', lineHeight: 2, listStyle: 'none', marginBottom: '2rem' }}>
+            <ul style={{ color: 'rgba(255,255,255,0.75)', lineHeight: 2, listStyle: 'none', marginBottom: '2rem', textAlign: 'left', display: 'inline-block' }}>
               <li>✓ Hundreds of door styles and colour options</li>
               <li>✓ Choose glazing panels and decorative glass</li>
               <li>✓ Select hardware — handles, knockers, letterplates</li>
               <li>✓ Preview your design before ordering</li>
             </ul>
-            <a href="https://portico.portal.bm-touch.co.uk/launch/edinburgh-windows-and-doo462" target="_blank" rel="noopener noreferrer" className="btn btn-primary btn-lg">Design Your Own Door →</a>
+            <div>
+              <a href="https://portico.portal.bm-touch.co.uk/launch/edinburgh-windows-and-doo462" target="_blank" rel="noopener noreferrer" className="btn btn-primary btn-lg">Design Your Own Door →</a>
+            </div>
           </div>
         </div>
       </section>

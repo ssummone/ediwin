@@ -68,7 +68,6 @@ export default function AccoyaDoorsPage() {
               { src: '/images/accoya door with brass letterplate.png', alt: 'Accoya door with brass letterplate' },
               { src: '/images/Accoya french doors.png', alt: 'Accoya French doors Edinburgh' },
               { src: '/images/Interior accoya door.png', alt: 'Interior Accoya timber door' },
-              { src: '/images/Accoya door pre paint.png', alt: 'Accoya door pre-paint finish' },
               { src: '/images/accoya door manufacture.jpeg', alt: 'Accoya door manufacture Edinburgh' },
             ].map(({ src, alt }) => (
               <div key={src} className="door-gallery-item">

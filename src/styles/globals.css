@@ -801,7 +801,8 @@ footer {
   justify-content: space-between;
   gap: 2.5rem;
   padding: 1.5rem 3rem;
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  background: #f4f4f4;
+  border-top: 1px solid #ddd;
   flex-wrap: nowrap;
 }
 
@@ -815,7 +816,7 @@ footer {
 
 .footer-legal-text p {
   font-size: 0.78rem;
-  color: rgba(255, 255, 255, 0.5);
+  color: #555;
   line-height: 1.5;
   margin: 0;
 }
@@ -831,13 +832,13 @@ footer {
 .footer-legal-logo-link {
   display: flex;
   align-items: center;
-  opacity: 0.82;
+  opacity: 1;
   transition: opacity 0.2s ease;
   text-decoration: none;
   flex-shrink: 0;
 }
 
-.footer-legal-logo-link:hover { opacity: 1; }
+.footer-legal-logo-link:hover { opacity: 0.8; }
 
 @media (max-width: 768px) {
   .footer-legal {

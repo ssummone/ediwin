@@ -1124,7 +1124,7 @@ footer {
 .project-category {
   display: inline-block;
   font-size: 0.75rem;
-  color: var(--orange);
+  color: var(--navy);
   font-weight: 600;
   text-transform: uppercase;
   margin-bottom: 0.5rem;
@@ -1521,7 +1521,7 @@ section.navy-bg .form-group textarea { background: rgba(255,255,255,0.08); borde
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  color: var(--orange);
+  color: #fff;
   margin-bottom: 0.4rem;
   display: block;
 }
@@ -1813,3 +1813,247 @@ details.faq-item .faq-answer p {
 }
 
 
+
+/* ═══════════════════════════════════════════════
+   GOOGLE REVIEWS SECTION
+   ═══════════════════════════════════════════════ */
+
+.reviews-section {
+  background: var(--cream);
+  padding: 5rem 2rem;
+}
+
+/* ── Header row ── */
+.reviews-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  background: #fff;
+  border: 1px solid var(--border-grey);
+  border-radius: 8px;
+  padding: 1.5rem 2rem;
+  margin-bottom: 2.5rem;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+}
+
+.reviews-header__left {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.reviews-google-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.reviews-google-brand__label {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: var(--dark);
+}
+
+.reviews-summary {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.reviews-summary__score {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--dark);
+  line-height: 1;
+}
+
+.reviews-summary__count {
+  font-size: 0.95rem;
+  color: var(--muted);
+}
+
+.reviews-cta-btn {
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+/* ── Stars ── */
+.review-stars {
+  display: flex;
+  gap: 2px;
+  align-items: center;
+}
+
+/* ── Grid ── */
+.reviews-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.25rem;
+}
+
+/* ── Individual card ── */
+.review-card {
+  background: #fff;
+  border: 1px solid var(--border-grey);
+  border-radius: 8px;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  transition: box-shadow 0.25s ease, transform 0.25s ease;
+}
+
+.review-card:hover {
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  transform: translateY(-2px);
+}
+
+.review-card__header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+/* ── Avatar ── */
+.review-avatar {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  object-fit: cover;
+}
+
+.review-avatar--initial {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+  user-select: none;
+}
+
+.review-card__author {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  min-width: 0;
+}
+
+.review-card__name {
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: var(--dark);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.review-card__time {
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+
+/* ── Review text ── */
+.review-card__text {
+  font-size: 0.9rem;
+  color: var(--dark);
+  line-height: 1.6;
+  margin: 0;
+  flex: 1;
+}
+
+.review-card__read-more {
+  background: none;
+  border: none;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--orange);
+  cursor: pointer;
+  text-align: left;
+  transition: color 0.2s ease;
+}
+
+.review-card__read-more:hover {
+  color: #b85317;
+}
+
+/* ── Card footer (Google badge) ── */
+.review-card__footer {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.78rem;
+  color: var(--muted);
+  margin-top: auto;
+  padding-top: 0.75rem;
+  border-top: 1px solid var(--border-grey);
+}
+
+.review-card__google-link {
+  color: #4285F4;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.review-card__google-link:hover {
+  text-decoration: underline;
+}
+
+/* ── Load more button ── */
+.reviews-load-more {
+  display: flex;
+  justify-content: center;
+  margin-top: 2.5rem;
+}
+
+/* ── Skeleton loading ── */
+.reviews-loading {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.25rem;
+}
+
+.review-card--skeleton {
+  height: 220px;
+  background: linear-gradient(90deg, #f0f0f0 25%, #e8e8e8 50%, #f0f0f0 75%);
+  background-size: 200% 100%;
+  animation: skeleton-shimmer 1.4s infinite;
+  border-color: transparent;
+}
+
+@keyframes skeleton-shimmer {
+  0%   { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+
+/* ── Responsive ── */
+@media (max-width: 1024px) {
+  .reviews-grid,
+  .reviews-loading {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .reviews-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .reviews-cta-btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .reviews-grid,
+  .reviews-loading {
+    grid-template-columns: 1fr;
+  }
+}

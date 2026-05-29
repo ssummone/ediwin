@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import Image from 'next/image';
+import GoogleReviews from '@/components/GoogleReviews';
 
 export const metadata: Metadata = {
   title: 'Edinburgh Windows and Doors | Scottish Timber Sash & Case Windows',
@@ -185,6 +186,9 @@ export default function Home() {
           </p>
         </div>
       </section>
+
+      {/* Google Reviews */}
+      <GoogleReviews />
 
       {/* Accreditations */}
       <div className="accreditations">

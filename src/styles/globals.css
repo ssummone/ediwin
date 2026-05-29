@@ -1521,7 +1521,7 @@ section.navy-bg .form-group textarea { background: rgba(255,255,255,0.08); borde
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  color: #fff;
+  color: var(--navy);
   margin-bottom: 0.4rem;
   display: block;
 }

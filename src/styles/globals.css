@@ -19,6 +19,7 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
@@ -26,6 +27,7 @@ body {
   color: var(--dark);
   line-height: 1.6;
   background: #fff;
+  overflow-x: hidden;
 }
 
 /* Typography */
@@ -1206,14 +1208,16 @@ footer {
   .nav-mobile-panel {
     display: none;
     flex-direction: column;
-    position: absolute;
+    position: fixed;
     top: 72px;
     left: 0;
     right: 0;
+    width: 100%;
     background: #fff;
     border-bottom: 2px solid var(--orange);
     max-height: calc(100vh - 72px);
     overflow-y: auto;
+    overflow-x: hidden;
     z-index: 999;
   }
 
@@ -1521,7 +1525,7 @@ section.navy-bg .form-group textarea { background: rgba(255,255,255,0.08); borde
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  color: var(--navy);
+  color: #fff;
   margin-bottom: 0.4rem;
   display: block;
 }

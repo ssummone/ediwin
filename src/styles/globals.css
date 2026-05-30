@@ -1568,7 +1568,7 @@ section.navy-bg .form-group textarea { background: rgba(255,255,255,0.08); borde
 .project-detail-hero-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(to top, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.3) 60%, transparent 100%);
+  background: linear-gradient(to top, rgba(0,0,0,0.75) 0%, rgba(0,0,0,0.4) 35%, transparent 65%);
   z-index: 1;
 }
 
@@ -1581,12 +1581,12 @@ section.navy-bg .form-group textarea { background: rgba(255,255,255,0.08); borde
 }
 
 .project-back-link {
-  display: inline-block;
+  display: block;
   font-size: 0.85rem;
   font-weight: 600;
   color: rgba(255,255,255,0.75);
   text-decoration: none;
-  margin-bottom: 1rem;
+  margin-bottom: 1.25rem;
   transition: color 0.2s;
   letter-spacing: 0.02em;
 }
@@ -1599,7 +1599,7 @@ section.navy-bg .form-group textarea { background: rgba(255,255,255,0.08); borde
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.12em;
-  color: var(--orange);
+  color: #fff;
   margin-bottom: 0.75rem;
 }
 

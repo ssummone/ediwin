@@ -53,7 +53,6 @@ export default function Nav() {
       </div>
 
       <div className="nav-ctas">
-        <Link href="/trade" className="btn btn-outline">Trade Account</Link>
         <Link href="/contact" className="btn btn-primary">Book a Survey</Link>
       </div>
 

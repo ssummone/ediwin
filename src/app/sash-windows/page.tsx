@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 export default function SashWindowsPage() {
   return (
     <>
-      <div className="hero-internal" style={{ backgroundImage: "url('/images/sash and case windows edinburgh.JPG')" }}>
+      <div className="hero-internal" style={{ backgroundImage: "url('/images/Pic 1.jpeg')" }}>
         <div className="hero-content">
           <h1>Bespoke Timber Sash &amp; Case Windows</h1>
           <p className="hero-sub">Made to measure in Edinburgh. Traditional craftsmanship with modern thermal performance. Survey to installation across Scotland and the UK.</p>
@@ -25,7 +25,7 @@ export default function SashWindowsPage() {
         <div className="container">
           <span className="section-eyebrow">Sash &amp; Case Windows</span>
           <div className="two-col">
-            <Image src="/images/sash window manufacture.jpeg" alt="Sash window manufacture" width={600} height={450} style={{ width: '100%', height: 'auto', borderRadius: '4px' }} />
+            <Image src="/images/Pic 1.jpeg" alt="Sash window manufacture" width={600} height={450} style={{ width: '100%', height: 'auto', borderRadius: '4px' }} />
             <div>
               <h2>Authentically made. Performance engineered.</h2>
               <p>Our sash and case windows are made entirely in our Edinburgh workshop using traditional joinery techniques. Every window is built to drawing — no two are exactly the same.</p>
@@ -33,7 +33,7 @@ export default function SashWindowsPage() {
               <ul className="feature-list" style={{ marginTop: '1.5rem' }}>
                 <li>Made to your exact measurements and drawings</li>
                 <li>Any paint or stain finish — RAL colours available</li>
-                <li>Draught-sealed, spring-balanced, fully operational</li>
+                <li>Draught-sealed, steel-weighted, fully operational</li>
                 <li>Recognised by Edinburgh City Council conservation officers</li>
                 <li>8–10 week lead time for supply-only orders</li>
               </ul>

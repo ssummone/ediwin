@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 export default function HeritageRestorationsPage() {
   return (
     <>
-      <div className="hero-internal" style={{ backgroundImage: "url('/images/timber sash window manufacture.png')" }}>
+      <div className="hero-internal" style={{ backgroundImage: "url('/images/Helen 3.jpg')" }}>
         <div className="hero-content">
           <span className="hero-eyebrow">Heritage &amp; Conservation</span>
           <h1>Heritage Restorations — Sash &amp; Case Windows</h1>
@@ -41,8 +41,8 @@ export default function HeritageRestorationsPage() {
             </div>
             <div>
               <Image
-                src="/images/sash window manufacture.jpeg"
-                alt="Heritage sash window manufacture Edinburgh"
+                src="/images/Helen 3.jpg"
+                alt="Heritage sash window restoration Edinburgh"
                 width={560}
                 height={420}
                 style={{ width: '100%', height: 'auto', borderRadius: '4px' }}

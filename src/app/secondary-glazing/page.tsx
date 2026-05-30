@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 export default function SecondaryGlazingPage() {
   return (
     <>
-      <div className="hero-internal" style={{ backgroundImage: "url('/images/Fraser suites edinburgh sash window refurbishment.jpg')" }}>
+      <div className="hero-internal" style={{ backgroundImage: "url('/images/heritage seconary glazing.png')" }}>
         <div className="hero-content">
           <h1>Secondary Glazing for Listed Buildings</h1>
           <p className="hero-sub">Retain your original windows. Add thermal and acoustic performance. Planning-friendly secondary glazing for Edinburgh&apos;s heritage properties.</p>
@@ -24,7 +24,7 @@ export default function SecondaryGlazingPage() {
       <section>
         <div className="container">
           <div className="two-col">
-            <Image src="/images/sash and case windows edinburgh.JPG" alt="Secondary glazing" width={600} height={450} style={{ width: '100%', height: 'auto', borderRadius: '4px' }} />
+            <Image src="/images/heritage seconary glazing.png" alt="Heritage secondary glazing" width={600} height={450} style={{ width: '100%', height: 'auto', borderRadius: '4px' }} />
             <div>
               <h2>Keep your original windows. Improve your comfort.</h2>
               <p>Secondary glazing is the planning-approved solution for listed buildings and conservation areas where replacing original windows isn&apos;t permitted — or isn&apos;t desired.</p>
@@ -32,7 +32,7 @@ export default function SecondaryGlazingPage() {
               <ul className="feature-list" style={{ marginTop: '1.5rem' }}>
                 <li>No planning permission required in most cases</li>
                 <li>Improves U-value without replacing original windows</li>
-                <li>Reduces noise by up to 80%</li>
+                <li>Considerably reduces noise levels</li>
                 <li>Removable — no permanent modification to the building</li>
                 <li>Recognised by Edinburgh City Council conservation officers</li>
               </ul>
@@ -62,7 +62,7 @@ export default function SecondaryGlazingPage() {
             {[
               { q: 'Does secondary glazing need planning permission?', a: 'In most cases, no planning permission is needed for secondary glazing. Because the original windows are not altered and the secondary panels are on the inside, it is generally accepted even in conservation areas and listed buildings. Always confirm with your local authority for listed buildings.' },
               { q: 'Can secondary glazing be removed?', a: 'Yes — that\'s one of its key advantages. Our secondary glazing is designed to be removable, making it ideal for the summer months or for maintenance purposes. It can be taken down and stored when not needed.' },
-              { q: 'How much noise does secondary glazing reduce?', a: 'Our acoustic-grade secondary glazing can reduce noise by up to 80%, making it one of the most effective solutions for city-centre properties or those near busy roads. The large air gap between the original window and the secondary panel is key to this performance.' },
+              { q: 'How much noise does secondary glazing reduce?', a: 'Secondary glazing can considerably reduce noise levels, making it one of the most effective solutions for city-centre properties or those near busy roads. The large air gap between the original window and the secondary panel is key to this performance.' },
               { q: 'Will secondary glazing affect the look of my windows?', a: 'Secondary glazing is fitted internally and is invisible from outside. Inside, slim aluminium frames are used which are designed to be as unobtrusive as possible. Most clients find them barely noticeable.' },
               { q: 'Is secondary glazing better than replacing my windows?', a: 'For listed buildings and conservation area properties, secondary glazing is often the only compliant option. Even where replacement is permitted, secondary glazing can be a cost-effective way to dramatically improve thermal and acoustic performance while retaining original windows.' },
               { q: 'Do you install secondary glazing Scotland-wide?', a: 'Yes. We install secondary glazing across Edinburgh, Glasgow, and throughout Scotland. Contact us to discuss your property and arrange a survey.' },

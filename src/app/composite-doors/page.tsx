@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 export default function CompositeDoors() {
   return (
     <>
-      <div className="hero-internal" style={{ backgroundImage: "url('/images/composite door.png')" }}>
+      <div className="hero-internal" style={{ backgroundImage: "url('/images/Dovetail.jpg')" }}>
         <div className="hero-content">
           <h1>Composite Doors — Designed Online, Installed Perfectly</h1>
           <p className="hero-sub">High-performance composite doors designed to your exact specification. Use our online door designer, then let us handle supply and installation across Scotland.</p>
@@ -80,7 +80,7 @@ export default function CompositeDoors() {
         <div className="container">
           <div className="two-col">
             <Image
-              src="/images/composite door 3.png"
+              src="/images/Dovetail.jpg"
               alt="Composite door installation service"
               width={600}
               height={450}

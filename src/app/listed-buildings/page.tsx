@@ -30,7 +30,7 @@ export default function ListedBuildingsPage() {
         <div className="container">
           <span className="section-eyebrow">Heritage Specialists</span>
           <div className="two-col">
-            <Image src="/images/Edinburgh property full sash and case refurbishment.JPG" alt="Listed building window refurbishment" width={600} height={450} style={{ width: '100%', height: 'auto', borderRadius: '4px' }} />
+            <Image src="/images/Pic 4.jpeg" alt="Listed building window refurbishment" width={600} height={450} style={{ width: '100%', height: 'auto', borderRadius: '4px' }} />
             <div>
               <h2>Experienced in Scotland&apos;s listed building requirements</h2>
               <p>We are an approved Accoya manufacturer and supplier of heritage glazing units, with extensive experience working on listed and conservation area properties across Edinburgh and Scotland. Please note that planning permission will still be required for your project — we work closely with conservation officers and can provide full product specifications and compliance documentation to support your application.</p>
